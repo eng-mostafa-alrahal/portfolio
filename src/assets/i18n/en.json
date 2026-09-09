@@ -1,0 +1,118 @@
+{
+  "Header.Item1": "About me",
+  "Header.Item2": "Experience",
+  "Header.Item3": "Projects",
+  "Header.Item4": "Contact",
+  "Header.cvBtn": "Resume",
+  "Header.cvName": "MOSTAFA_ALRAHAL_RESUME.pdf",
+  "Banner.Pretitle": "Hello! My name is",
+  "Banner.Description": "I am a Generative AI Engineer with hands-on experience building <span class='underline'>LLM applications</span>, <span class='underline'>RAG pipelines</span>, and <span class='underline'>agentic AI systems</span> using Python, LangGraph, LangChain, Google ADK, and FastAPI. My work spans document ingestion, retrieval architectures, prompt engineering, tool calling, and multi-agent orchestration—delivering modular solutions that are both technically robust and aligned with business goals.",
+  "Banner.ActionBtn": "Get in touch",
+  "AboutMe.Title": "About me",
+  "AboutMe.Paragraphs": [
+    "I build practical LLM applications, RAG pipelines, and agentic AI systems using <span class='underline'>Python, LangGraph, LangChain, Google ADK, and FastAPI</span>. My focus covers document ingestion, retrieval architectures, prompt engineering, tool calling, and multi-agent orchestration. I contributed to <span class='underline'>Deloitte’s AI Tax Assistant</span> by developing RAG and document-processing workflows over thousands of proprietary legal documents, and built multi-tenant conversational AI systems for customer-specific use cases. I am a U.S. Permanent Resident with a WES-verified U.S. bachelor’s-equivalent degree in Information Technology Engineering."
+  ],
+  "AboutMe.Skills": [
+    "Generative AI, Multi-Agent Orchestration, Prompt Engineering, Tool Calling, Knowledge Graphs, LLMs, RAG, NLP, CV",
+    "LangGraph, LangChain, Google ADK, PyTorch, Scikit-learn, OpenCV, Docling",
+    "Python, Java, TypeScript, FastAPI, Laravel, Angular, PostgreSQL, MongoDB, pgvector, Atlas, Neo4j, Redis, GCP, Docker, Git, REST, SSE, WebSockets"
+  ],
+  "Experience.Title": "Experience",
+  "Experience.Jobs": [
+    {
+      "Tab": "MALY",
+      "Title": "Gen AI Engineer",
+      "Date": "August 2024 - May 2026",
+      "Description": [
+        "Contributed to the development and deployment of Deloitte’s AI Tax Assistant, implementing RAG, LangChain, LangGraph, and prompt engineering to ingest, index, and retrieve information from thousands of proprietary legal documents for MENA tax guidance.",
+        "Built AI4ALL, a multi-tenant AI platform for rapidly deploying and demonstrating customer-specific AI agents and prototypes, using Python, Google ADK, agent orchestration, tool calling, and prompt engineering; reduced the time required to deliver new AI prototypes from days or weeks to hours.",
+        "Developed Luna, a conversational AI financial assistant, leveraging RAG, prompt engineering (Few-Shot, ReAct), and context-injection to deliver safe, personalized answers to financial inquiries, reducing routine customer support tickets by 60%."
+      ]
+    },
+    {
+      "Tab": "Freelancer",
+      "Title": "Software Developer",
+      "Date": "October 2023 - August 2024",
+      "Description": [
+        "Developed and maintained production web applications using Angular, Laravel, and REST APIs.",
+        "Built reusable UI components and integrated backend services to support feature delivery."
+      ]
+    }
+  ],
+  "FeatureProjects.Title": "Projects that I was a part of",
+  "FeatureProjects.Label": "MALY",
+  "FeatureProjects.Projects": [
+    {
+      "Title": "Deloitte's AI Tax Assistant",
+      "Description": "<span class='underline'>Deloitte's AI Tax Assistant</span> is a specialized RAG system for MENA tax guidance—ingesting, indexing, and retrieving information from thousands of proprietary legal documents with LangChain, LangGraph, and prompt engineering for high-fidelity answers and document summaries.",
+      "imgs": [
+        "assets/images/deloitte/image1.webp",
+        "assets/images/deloitte/image2.webp"
+      ],
+      "demoLink": "https://play.google.com/store/apps/details?id=com.deloitte.metaxpulse",
+      "Technologies": ["Python", "LangChain", "LangGraph", "RAG", "LLM", "FastAPI", "MongoDB Atlas", "Rides"]
+    },
+    {
+      "Title": "MALY's Luna",
+      "Description": "<span class='underline'>Luna</span> is a conversational AI financial assistant that uses RAG, Few-Shot and ReAct prompting, and context-injection to deliver safe, personalized answers—reducing routine customer support tickets by 60%.",
+      "imgs": ["assets/images/luna/image1.webp", "assets/images/luna/image2.webp", "assets/images/luna/image3.webp"],
+      "demoLink": "https://play.google.com/store/apps/details?id=com.save.app.save",
+      "Technologies": ["Python","Google ADK", "RAG", "LLM", "FastAPI", "MongoDB Atlas", "Rides"]
+    },
+    {
+      "Title": "AI4ALL",
+      "Description": "<span class='underline'>AI4ALL</span> is a multi-tenant AI platform for rapidly deploying and demonstrating customer-specific AI agents and prototypes with Google ADK, agent orchestration, and tool calling—cutting new prototype delivery from days or weeks to hours.",
+      "imgs": ["assets/images/ai4all/ai_concierge.webp","assets/images/ai4all/salma1.webp","assets/images/ai4all/salma2.webp","assets/images/ai4all/akaliza1.webp","assets/images/ai4all/akaliza2.webp"],
+      "Technologies": ["Python", "Google ADK", "FastAPI", "LLM", "MongoDB Atlas", "Rides"]
+    },
+    {
+      "Title": "MALY's data ingestion pipeline",
+      "Description": "<span class='underline'>Ingestion pipeline</span> automates parsing, chunking, and vectorization of diverse document formats for AI assistant knowledge bases—forming the core of Maly’s RAG architecture for consistent, efficient retrieval across applications.",
+      "imgs": ["assets/images/data_pipeline/image1.webp","assets/images/data_pipeline/image2.webp"],
+      "Technologies": ["Python", "FastAPI", "RAG", "Docling", "Rides"]
+    }
+  ],
+  "OtherProjects.Title": "More personal projects",
+  "OtherProjects.Projects": [
+    {
+      "Title": "Multi-Agent Travel Planner",
+      "Description": "LangChain and LangGraph multi-agent travel planner that orchestrates specialized agents and dynamically provisions destination-specific RAG knowledge bases when information is unavailable from the indexed knowledge base.",
+      "demoLink": "",
+      "ghLink": "https://github.com/eng-mostafa-alrahal/autonomous-travel-guide",
+      "Technologies": ["Python", "LangChain", "LangGraph", "FastAPI", "RAG", "pgvector", "Rides"]
+    },
+    {
+      "Title": "Document Processing Service",
+      "Description": "Multi-tenant data ingestion service for RAG systems that automates parsing and vectorization of PDFs, DOCX, PPTX, TXT, and MD using Docling, LlamaParse, and Jina’s late chunking—accelerating the creation of new agentic RAG applications.",
+      "demoLink": "",
+      "ghLink": "https://github.com/eng-mostafa-alrahal/rag-document-processor",
+      "Technologies": ["Python", "FastAPI", "Docling", "LlamaParse", "Jina", "Rides"]
+    },
+    {
+      "Title": "Fruitful Tree Count Management",
+      "Description": "Full-stack farm management system uses Computer Vision, specifically low-cost spectral signature recognition on satellite images, for automated fruit tree counting, change detection using Google Earth Engine and comprehensive farm management services.",
+      "ghLink": "https://github.com/eng-mostafa-alrahal/fruitful-tree-count-management",
+      "demoLink": "https://www.linkedin.com/posts/nabil-ghosn_ai-agritech-innovation-activity-7268596532893941760-49ia?utm_source=share&utm_medium=member_desktop&rcm=ACoAADlGAoABxYXjgrq2tdz9_iIhgwV_ueH3hNs",
+      "Technologies": ["Django", "GEE", "Python", "OpenCV"]
+    },
+    {
+      "Title": "LangGraph Agent — Clean Architecture",
+      "Description": "Demonstrates how to ship a serious agent backend: orchestration with LangChain and LangGraph, real auth and persistence, optional background jobs, and MCP for external tools—structured so teams can extend modules without rewriting the core.",
+      "demoLink": "",
+      "ghLink": "https://github.com/eng-mostafa-alrahal/langgraph-agent-clean-architecture",
+      "Technologies": ["Python", "FastAPI", "LLM", "LangChain", "LangGraph", "postgres"]
+    },
+    {
+      "Title": "Academic AI Projects",
+      "Description": "Applied NLP, computer-vision, deep-learning, and machine-learning projects (2021–2024), including hand-gesture recognition, text classification, and income prediction using OpenCV, Scikit-learn, and PyTorch.",
+      "demoLink": "",
+      "ghLink": "",
+      "Technologies": ["Python", "OpenCV", "Scikit-learn", "PyTorch", "NLP", "CV"]
+    }
+  ],
+  "Contact.Pretitle": "What’s Next",
+  "Contact.Title": "Get in touch!",
+  "Contact.Content": "I will be happy to receive your contact if you want to talk about new opportunities. Write me, and I will reply as soon as I see your message.",
+  "Contact.Btn": "Say Hello",
+  "Contact.Email": "mostafa.kha.alrahal@gmail.com"
+}
