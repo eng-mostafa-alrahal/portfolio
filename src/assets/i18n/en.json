@@ -6,7 +6,7 @@
   "Header.cvBtn": "Resume",
   "Header.cvName": "MOSTAFA_ALRAHAL_RESUME.pdf",
   "Banner.Pretitle": "Hello! My name is",
-  "Banner.Description": "I am a Generative AI Engineer with hands-on experience building <span class='underline'>LLM applications</span>, <span class='underline'>RAG pipelines</span>, and <span class='underline'>agentic AI systems</span> using Python, LangGraph, LangChain, Google ADK, and FastAPI. My work spans document ingestion, retrieval architectures, prompt engineering, tool calling, and multi-agent orchestration—delivering modular solutions that are both technically robust and aligned with business goals.",
+  "Banner.Description": "I am a Applied AI Engineer with hands-on experience building <span class='underline'>LLM applications</span>, <span class='underline'>RAG pipelines</span>, and <span class='underline'>agentic AI systems</span> using Python, LangGraph, LangChain, Google ADK, and FastAPI. My work spans document ingestion, retrieval architectures, prompt engineering, tool calling, and multi-agent orchestration—delivering modular solutions that are both technically robust and aligned with business goals.",
   "Banner.ActionBtn": "Get in touch",
   "AboutMe.Title": "About me",
   "AboutMe.Paragraphs": [
