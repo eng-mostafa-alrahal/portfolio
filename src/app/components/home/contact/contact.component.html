@@ -1,19 +1,40 @@
 <section class="section contact" id='contact'>
     <div class="container">
         <div class="section-box">
-            <div class="mb-4" data-aos="fade-up" data-aos-duration="1000">
+            <div class="contact-card" data-aos="fade-up" data-aos-duration="1000">
                 <h3 class="contact-pre-title big-subtitle">05. {{"Contact.Pretitle" | translate}}</h3>
                 <h4 class="e-font contact-title big-title">
                     {{"Contact.Title" | translate}}
                 </h4>
-            </div>
-            <p data-aos="fade-up" data-aos-duration="1000">
-                {{"Contact.Content" | translate}}
-            </p>
-            <div class="mt-5">
-                <a (click)='analyticsService.sendAnalyticEvent("click_send_mail", "contact", "email")' href="mailto:{{ 'Contact.Email' | translate }}" target="_blank" class="main-btn" data-aos="fade-up" data-aos-duration="1000">
-                    {{"Contact.Btn" | translate}}
-                </a>
+                <p class="contact-text mt-3">
+                    {{"Contact.Content" | translate}}
+                </p>
+
+                <div class="contact-actions mt-4">
+                    <a (click)='analyticsService.sendAnalyticEvent("click_send_mail", "contact", "email")' href="mailto:{{ 'Contact.Email' | translate }}" target="_blank" class="primary-btn">
+                        <i class="fas fa-envelope"></i> {{"Contact.Btn" | translate}}
+                    </a>
+                    <a href="https://www.linkedin.com/in/mostafa-alrahal-368972229/" target="_blank" rel="noopener noreferrer" class="main-btn">
+                        <i class="fab fa-linkedin-in"></i> Connect on LinkedIn
+                    </a>
+                    <a href="https://github.com/eng-mostafa-alrahal" target="_blank" rel="noopener noreferrer" class="main-btn">
+                        <i class="fab fa-github"></i> GitHub Profile
+                    </a>
+                </div>
+
+                <div class="contact-direct-meta mt-4 pt-3">
+                    <a href="mailto:{{ 'Contact.Email' | translate }}" class="meta-item">
+                        <i class="fas fa-at"></i> {{ "Contact.Email" | translate }}
+                    </a>
+                    <span class="meta-divider">·</span>
+                    <a href="tel:+17243517270" class="meta-item">
+                        <i class="fas fa-phone-alt"></i> {{ "Contact.Phone" | translate }}
+                    </a>
+                    <span class="meta-divider">·</span>
+                    <span class="meta-item">
+                        <i class="fas fa-map-marker-alt"></i> Pittsburgh, PA · Open to Relocate
+                    </span>
+                </div>
             </div>
         </div>
     </div>

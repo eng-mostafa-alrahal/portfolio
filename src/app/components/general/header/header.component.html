@@ -1,7 +1,11 @@
 <nav [@animateMenu] class="navbar main-navbar on-top" [class.nav-shadow]='this.pageYPosition>0'>
-    <div class="container">
-        <a class="navbar-brand text-light" [routerLink]="'inicio'">
-            <img src='assets/images/me/mostafa.jpg' width='45' style="border-radius: 50%;"/>
+    <div class="container d-flex align-items-center justify-content-between">
+        <a class="navbar-brand text-light brand-link" (click)='scroll("banner")'>
+            <img src='assets/images/me/mostafa.jpg' width='40' height='40' class="brand-avatar" alt="Mostafa Alrahal"/>
+            <div class="brand-meta">
+                <span class="brand-name">Mostafa Alrahal</span>
+                <span class="brand-role">Applied AI Engineer</span>
+            </div>
         </a>
         <ul ngbNav #nav="ngbNav" class="menu-ul">
             <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_about", "menu", "click")'>
@@ -14,23 +18,30 @@
             </li>
             <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_jobs", "menu", "click")'>
                 <a ngbNavLink (click)='scroll("proyects")'><span class='nav-number'>03. </span> <span class="underline nav-text"> {{"Header.Item3" | translate}}</span></a>
-                <ng-template ngbNavContent>Second content</ng-template>
+                <ng-template ngbNavContent>Third content</ng-template>
+            </li>
+            <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_opensource", "menu", "click")'>
+                <a ngbNavLink (click)='scroll("more-proyects")'><span class='nav-number'>04. </span> <span class="underline nav-text"> {{"Header.Item4" | translate}}</span></a>
+                <ng-template ngbNavContent>Fourth content</ng-template>
             </li>
             <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_contact", "menu", "click")'>
-                <a ngbNavLink (click)='scroll("contact")'><span class='nav-number'>04. </span> <span class="underline nav-text"> {{"Header.Item4" | translate}}</span></a>
-                <ng-template ngbNavContent>Second content</ng-template>
+                <a ngbNavLink (click)='scroll("contact")'><span class='nav-number'>05. </span> <span class="underline nav-text"> {{"Header.Item5" | translate}}</span></a>
+                <ng-template ngbNavContent>Fifth content</ng-template>
             </li>
             <li ngbNavItem>
                 <a (click)="downloadCV()" class="main-btn cv-btn" ngbNavLink>
-                  {{"Header.cvBtn" | translate}}
+                  <i class="fas fa-file-alt mr-1"></i> {{"Header.cvBtn" | translate}}
                 </a>
             </li>
         </ul>
-        <div class="menu-wrapper">
-            <div [class.animate]='responsiveMenuVisible' (click)='responsiveMenuVisible = !responsiveMenuVisible' class="hamburger-menu"></div>
+        <div class="menu-wrapper" (click)='responsiveMenuVisible = !responsiveMenuVisible'>
+            <div [class.animate]='responsiveMenuVisible' class="hamburger-menu"></div>
         </div>
-        <div class="menu-responsive" [ngStyle]="{'pointer-events': !responsiveMenuVisible ? 'none' : '' }">
-            <aside [class.aside-show]='responsiveMenuVisible' [class.nav-shadow]='this.pageYPosition>0' class="on-top">
+        <div class="menu-responsive"
+             [class.menu-open]="responsiveMenuVisible"
+             [ngStyle]="{'pointer-events': !responsiveMenuVisible ? 'none' : 'auto' }"
+             (click)="responsiveMenuVisible = false">
+            <aside [class.aside-show]='responsiveMenuVisible' [class.nav-shadow]='this.pageYPosition>0' class="on-top" (click)="$event.stopPropagation()">
                 <nav>
                     <ol>
                         <li (click)='analyticsService.sendAnalyticEvent("click_about", "menu", "click")'>
@@ -44,26 +55,25 @@
                             </a>
                         </li>
                         <li (click)='analyticsService.sendAnalyticEvent("click_jobs", "menu", "click")'>
-                          <a (click)='scroll("proyects")'>
-                              <span>03. </span> {{"Header.Item3" | translate}}
-                          </a>
-                      </li>
-                      <li (click)='analyticsService.sendAnalyticEvent("click_contact", "menu", "click")'>
-                        <a (click)='scroll("proyects")'>
-                            <span>04. </span> {{"Header.Item4" | translate}}
-                        </a>
-                      </li>
-                      <li>
-                          <a (click)="downloadCV()" class="main-btn cv-btn">
-                            {{"Header.cvBtn" | translate}}
-                          </a>
-                      </li>
-                    
-                        <!-- <li>
-                            <img src="https://www.worldometers.info/img/flags/us-flag.gif" alt="English">
-                        </li> -->
-
-
+                            <a (click)='scroll("proyects")'>
+                                <span>03. </span> {{"Header.Item3" | translate}}
+                            </a>
+                        </li>
+                        <li (click)='analyticsService.sendAnalyticEvent("click_opensource", "menu", "click")'>
+                            <a (click)='scroll("more-proyects")'>
+                                <span>04. </span> {{"Header.Item4" | translate}}
+                            </a>
+                        </li>
+                        <li (click)='analyticsService.sendAnalyticEvent("click_contact", "menu", "click")'>
+                            <a (click)='scroll("contact")'>
+                                <span>05. </span> {{"Header.Item5" | translate}}
+                            </a>
+                        </li>
+                        <li>
+                            <a (click)="downloadCV()" class="main-btn cv-btn">
+                              <i class="fas fa-file-alt mr-1"></i> {{"Header.cvBtn" | translate}}
+                            </a>
+                        </li>
                     </ol>
                 </nav>
             </aside>

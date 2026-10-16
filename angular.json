@@ -26,9 +26,20 @@
                         "tsConfig": "tsconfig.app.json",
                         "assets": [
                             "src/favicon.ico",
+                            "src/favicon.svg",
                             "src/assets",
                             "src/manifest.webmanifest",
-                            "src/.htaccess"
+                            "src/.htaccess",
+                            {
+                                "glob": "{robots.txt,llms.txt,sitemap.xml,profile.json,profile.html}",
+                                "input": "src",
+                                "output": "/"
+                            },
+                            {
+                                "glob": "llms.txt",
+                                "input": "src",
+                                "output": "/.well-known"
+                            }
                         ],
                         "styles": [
                             "node_modules/@fortawesome/fontawesome-free/css/all.css",

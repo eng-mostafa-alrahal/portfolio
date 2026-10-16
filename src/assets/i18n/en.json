@@ -1,118 +1,289 @@
 {
-  "Header.Item1": "About me",
+  "Header.Item1": "About & Stack",
   "Header.Item2": "Experience",
-  "Header.Item3": "Projects",
-  "Header.Item4": "Contact",
+  "Header.Item3": "Case Studies",
+  "Header.Item4": "Open Source",
+  "Header.Item5": "Contact",
   "Header.cvBtn": "Resume",
   "Header.cvName": "MOSTAFA_ALRAHAL_RESUME.pdf",
-  "Banner.Pretitle": "Hello! My name is",
-  "Banner.Description": "I am a Applied AI Engineer with hands-on experience building <span class='underline'>LLM applications</span>, <span class='underline'>RAG pipelines</span>, and <span class='underline'>agentic AI systems</span> using Python, LangGraph, LangChain, Google ADK, and FastAPI. My work spans document ingestion, retrieval architectures, prompt engineering, tool calling, and multi-agent orchestration—delivering modular solutions that are both technically robust and aligned with business goals.",
-  "Banner.ActionBtn": "Get in touch",
-  "AboutMe.Title": "About me",
+
+  "Banner.BadgeLocation": "Pittsburgh, PA · Open to Relocate",
+  "Banner.BadgeAuth": "U.S. Permanent Resident · No Sponsorship Required",
+  "Banner.Pretitle": "APPLIED AI ENGINEER | RAG, LLM APPLICATIONS & AGENTIC SYSTEMS",
+  "Banner.Name": "Mostafa Alrahal.",
+  "Banner.Role": "Engineering Production RAG & Agentic AI.",
+  "Banner.Description": "Applied AI Engineer building enterprise <span class='underline'>retrieval-augmented generation (RAG)</span>, stateful <span class='underline'>multi-agent workflows</span>, and <span class='underline'>multi-tenant AI backends</span> in Python. At Maly Tech, I contributed to the AI assistant for <span class='underline'>Deloitte Middle East’s ME Tax Pulse</span> and developed reusable customer-specific agent platforms. My public <span class='underline'>LangGraph & FastAPI Clean Architecture</span> repositories demonstrate production-ready authentication, async persistence, MCP tool integration, and automated testing.",
+  "Banner.ActionBtn": "Get in Touch",
+  "Banner.SecondaryBtn": "View Open-Source Code",
+
+  "AboutMe.Title": "About & Engineering Approach",
   "AboutMe.Paragraphs": [
-    "I build practical LLM applications, RAG pipelines, and agentic AI systems using <span class='underline'>Python, LangGraph, LangChain, Google ADK, and FastAPI</span>. My focus covers document ingestion, retrieval architectures, prompt engineering, tool calling, and multi-agent orchestration. I contributed to <span class='underline'>Deloitte’s AI Tax Assistant</span> by developing RAG and document-processing workflows over thousands of proprietary legal documents, and built multi-tenant conversational AI systems for customer-specific use cases. I am a U.S. Permanent Resident with a WES-verified U.S. bachelor’s-equivalent degree in Information Technology Engineering."
+    "I am an <span class='underline'>Applied AI Engineer</span> based in Pittsburgh, PA, specializing in turning LLM capabilities into reliable, maintainable backend systems using <span class='underline'>Python, FastAPI, LangGraph, LangChain, and Google ADK</span>. My work bridges the full lifecycle of AI engineering—from layout-aware document ingestion and vector retrieval pipelines to deterministic multi-agent orchestration and streaming APIs.",
+    "At <span class='underline'>Maly Tech Ltd</span>, I contributed to the AI assistant embedded in <span class='underline'>Deloitte Middle East’s ME Tax Pulse</span>, architected the <span class='underline'>AI4ALL</span> multi-tenant agent prototyping platform, and built <span class='underline'>Luna</span>, a RAG-powered financial assistant. Beyond proprietary client systems, I maintain open-source reference architectures that showcase strict port/adapter separation, Human-in-the-Loop (HITL) approval gates, and verifiable quote extraction."
   ],
-  "AboutMe.Skills": [
-    "Generative AI, Multi-Agent Orchestration, Prompt Engineering, Tool Calling, Knowledge Graphs, LLMs, RAG, NLP, CV",
-    "LangGraph, LangChain, Google ADK, PyTorch, Scikit-learn, OpenCV, Docling",
-    "Python, Java, TypeScript, FastAPI, Laravel, Angular, PostgreSQL, MongoDB, pgvector, Atlas, Neo4j, Redis, GCP, Docker, Git, REST, SSE, WebSockets"
-  ],
-  "Experience.Title": "Experience",
-  "Experience.Jobs": [
+  "AboutMe.ProfileFacts": [
     {
-      "Tab": "MALY",
-      "Title": "Gen AI Engineer",
-      "Date": "August 2024 - May 2026",
-      "Description": [
-        "Contributed to the development and deployment of Deloitte’s AI Tax Assistant, implementing RAG, LangChain, LangGraph, and prompt engineering to ingest, index, and retrieve information from thousands of proprietary legal documents for MENA tax guidance.",
-        "Built AI4ALL, a multi-tenant AI platform for rapidly deploying and demonstrating customer-specific AI agents and prototypes, using Python, Google ADK, agent orchestration, tool calling, and prompt engineering; reduced the time required to deliver new AI prototypes from days or weeks to hours.",
-        "Developed Luna, a conversational AI financial assistant, leveraging RAG, prompt engineering (Few-Shot, ReAct), and context-injection to deliver safe, personalized answers to financial inquiries, reducing routine customer support tickets by 60%."
+      "Icon": "fas fa-map-marker-alt",
+      "Label": "Location",
+      "Value": "Pittsburgh, PA (Open to Remote, Hybrid & Relocation)"
+    },
+    {
+      "Icon": "fas fa-id-card",
+      "Label": "Work Authorization",
+      "Value": "U.S. Permanent Resident — No Sponsorship Required"
+    },
+    {
+      "Icon": "fas fa-graduation-cap",
+      "Label": "Education",
+      "Value": "B.S. in IT Engineering (AI & NLP) · Damascus University (2025)"
+    },
+    {
+      "Icon": "fas fa-award",
+      "Label": "Credentials",
+      "Value": "GPA: 3.78 / 4.0 · WES-Evaluated U.S. Bachelor's Equivalency"
+    }
+  ],
+  "AboutMe.PillarsTitle": "How I Engineer Production AI Systems",
+  "AboutMe.Pillars": [
+    {
+      "Icon": "fas fa-layer-group",
+      "Title": "Document Intelligence & High-Precision RAG",
+      "Subtitle": "Ingestion · Chunking · Grounded Retrieval",
+      "Description": "Designing multi-tenant ingestion pipelines that parse complex layouts (PDF, DOCX, PPTX, Markdown) via Docling and LlamaParse, preserve document context across chunks, and enforce citation and verbatim quote verification over vector databases."
+    },
+    {
+      "Icon": "fas fa-project-diagram",
+      "Title": "Stateful Multi-Agent Orchestration",
+      "Subtitle": "LangGraph · Google ADK · HITL & MCP",
+      "Description": "Building deterministic graph workflows that coordinate specialized sub-agents in parallel, enforce Human-in-the-Loop (HITL) approval gates before sensitive mutations or costly KB builds, and sandbox external tools via Model Context Protocol (MCP)."
+    },
+    {
+      "Icon": "fas fa-server",
+      "Title": "Clean Architecture AI Backends",
+      "Subtitle": "FastAPI · Async SQLAlchemy · Redis & Celery",
+      "Description": "Structuring AI services with strict Domain, Application, and Infrastructure boundaries, Unit-of-Work PostgreSQL persistence, JWT rotation, SSE token/phase streaming, background Celery workers, and automated pytest suites."
+    }
+  ],
+  "AboutMe.SkillsTitle": "Technical Stack",
+  "AboutMe.SkillCategories": [
+    {
+      "Category": "AI, LLMs & Data",
+      "Items": [
+        "RAG",
+        "LLM Applications",
+        "LangGraph",
+        "LangChain",
+        "Google ADK",
+        "Multi-Agent Orchestration",
+        "Tool Calling & MCP",
+        "Prompt Engineering",
+        "Vector Databases",
+        "Docling",
+        "LlamaParse"
       ]
     },
     {
-      "Tab": "Freelancer",
-      "Title": "Software Developer",
-      "Date": "October 2023 - August 2024",
-      "Description": [
-        "Developed and maintained production web applications using Angular, Laravel, and REST APIs.",
-        "Built reusable UI components and integrated backend services to support feature delivery."
+      "Category": "Software & Infrastructure",
+      "Items": [
+        "Python",
+        "FastAPI",
+        "Clean Architecture",
+        "REST APIs",
+        "SSE / WebSockets",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Celery",
+        "Docker",
+        "GCP",
+        "Git & CI/CD",
+        "TypeScript",
+        "Angular",
+        "Laravel"
+      ]
+    },
+    {
+      "Category": "Additional ML & Computer Vision",
+      "Items": [
+        "PyTorch",
+        "scikit-learn",
+        "OpenCV",
+        "Hugging Face",
+        "Natural Language Processing (NLP)",
+        "Computer Vision"
       ]
     }
   ],
-  "FeatureProjects.Title": "Projects that I was a part of",
-  "FeatureProjects.Label": "MALY",
+  "AboutMe.Skills": [
+    "AI & Data: RAG, LLM Applications, LangGraph, LangChain, Google ADK, Tool Calling, Multi-Agent Orchestration, Prompt Engineering, Docling, LlamaParse",
+    "Software & Infrastructure: Python, FastAPI, REST APIs, SSE/WebSockets, PostgreSQL, MongoDB, Redis, Celery, Docker, Git, GCP, TypeScript, Angular, Laravel",
+    "Additional ML: PyTorch, scikit-learn, OpenCV, NLP, Computer Vision"
+  ],
+
+  "Experience.Title": "Experience & Education",
+  "Experience.Jobs": [
+    {
+      "Tab": "Maly Tech",
+      "Title": "Generative AI Engineer",
+      "CompanyFull": "Maly Tech Ltd · Dubai, UAE",
+      "Date": "August 2024 – May 2026",
+      "Description": [
+        "Contributed to the AI assistant for <span class='underline'>Deloitte Middle East’s ME Tax Pulse</span>, implementing RAG and LangGraph workflows for document ingestion, indexing, and retrieval across thousands of regional tax and legal documents.",
+        "Built <span class='underline'>AI4ALL</span>, a multi-tenant platform for customer-specific AI agents and prototypes using Python, Google ADK, agent orchestration, and tool calling; reduced prototype delivery from days or weeks to hours.",
+        "Developed <span class='underline'>Luna</span>, a RAG-powered financial assistant using prompt engineering and dynamic context injection; associated with a reported 60% reduction in routine customer-support tickets.",
+        "Engineered reusable multi-tenant document ingestion pipelines automating layout parsing, chunking, and vectorization across PDF, DOCX, PPTX, TXT, and Markdown formats."
+      ]
+    },
+    {
+      "Tab": "Freelance",
+      "Title": "Software Developer",
+      "CompanyFull": "Independent Full-Stack Engineering",
+      "Date": "October 2023 – August 2024",
+      "Description": [
+        "Developed and maintained production web applications with <span class='underline'>Angular, Laravel, and REST APIs</span>, integrating backend services and building reusable UI components.",
+        "Collaborated with clients to translate business workflows into responsive front-end interfaces and structured relational database schemas."
+      ]
+    },
+    {
+      "Tab": "Education",
+      "Title": "B.S. in Information Technology Engineering (AI & NLP)",
+      "CompanyFull": "Damascus University",
+      "Date": "Graduated 2025 · GPA: 3.78 / 4.0 (WES-Evaluated U.S. Equivalency)",
+      "Description": [
+        "<span class='underline'>WES-Evaluated U.S. Bachelor’s Degree Equivalency</span> with a 3.78/4.0 GPA, specializing in Artificial Intelligence and Natural Language Processing.",
+        "Led the <span class='underline'>Fruitful Tree Count Management</span> graduation project, developing and evaluating computer-vision and deep-learning algorithms for automated fruit-tree detection from satellite imagery (OpenCV, GeoDjango, and Google Earth Engine), achieving >90% reported detection accuracy and winning <span class='underline'>1st Place</span> in the National Programming Competition."
+      ]
+    }
+  ],
+
+  "FeatureProjects.Title": "Enterprise AI Case Studies",
+  "FeatureProjects.Subtitle": "Production RAG, multi-tenant platforms, and conversational assistants built at Maly Tech Ltd",
+  "FeatureProjects.Label": "MALY TECH · ENTERPRISE AI",
   "FeatureProjects.Projects": [
     {
-      "Title": "Deloitte's AI Tax Assistant",
-      "Description": "<span class='underline'>Deloitte's AI Tax Assistant</span> is a specialized RAG system for MENA tax guidance—ingesting, indexing, and retrieving information from thousands of proprietary legal documents with LangChain, LangGraph, and prompt engineering for high-fidelity answers and document summaries.",
+      "Label": "Maly Tech · Enterprise Client: Deloitte Middle East",
+      "Title": "ME Tax Pulse — AI Tax & Legal Assistant",
+      "Description": "Contributed to the embedded AI assistant for <span class='underline'>Deloitte Middle East’s ME Tax Pulse</span> mobile and web platform. Implemented modular <span class='underline'>RAG and LangGraph workflows</span> to ingest, index, and retrieve authoritative guidance across thousands of Middle East tax regulations, treaties, and legal documents with high-fidelity summarization.",
+      "Highlights": [
+        "Domain-specific retrieval and prompt orchestration over complex multi-jurisdiction tax and legal corpora",
+        "Publicly launched by Deloitte Middle East in August 2025 on Google Play and iOS"
+      ],
       "imgs": [
         "assets/images/deloitte/image1.webp",
         "assets/images/deloitte/image2.webp"
       ],
       "demoLink": "https://play.google.com/store/apps/details?id=com.deloitte.metaxpulse",
-      "Technologies": ["Python", "LangChain", "LangGraph", "RAG", "LLM", "FastAPI", "MongoDB Atlas", "Rides"]
+      "pressLink": "https://www.deloitte.com/middle-east/en/about/press-room/deloitte-middle-east-launches-me-tax-pulse.html",
+      "Technologies": ["Python", "LangGraph", "LangChain", "RAG", "FastAPI", "MongoDB Atlas", "Redis"]
     },
     {
-      "Title": "MALY's Luna",
-      "Description": "<span class='underline'>Luna</span> is a conversational AI financial assistant that uses RAG, Few-Shot and ReAct prompting, and context-injection to deliver safe, personalized answers—reducing routine customer support tickets by 60%.",
-      "imgs": ["assets/images/luna/image1.webp", "assets/images/luna/image2.webp", "assets/images/luna/image3.webp"],
+      "Label": "Maly Tech · Multi-Tenant Agent Platform",
+      "Title": "AI4ALL — Customer-Specific Agent Platform",
+      "Description": "Architected and built <span class='underline'>AI4ALL</span>, a reusable multi-tenant platform for rapidly configuring, orchestrating, and demonstrating customer-specific AI agents using <span class='underline'>Python, Google ADK, and tool calling</span>—cutting new prototype delivery time from days or weeks down to hours.",
+      "Highlights": [
+        "Tenant-isolated agent configurations, custom persona prompts, and pluggable tool registries",
+        "Powered rapid executive demos and domain-tailored assistants (AI Concierge, Salma, Akaliza)"
+      ],
+      "imgs": [
+        "assets/images/ai4all/ai_concierge.webp",
+        "assets/images/ai4all/salma1.webp",
+        "assets/images/ai4all/salma2.webp",
+        "assets/images/ai4all/akaliza1.webp",
+        "assets/images/ai4all/akaliza2.webp"
+      ],
+      "Technologies": ["Python", "Google ADK", "Multi-Agent Orchestration", "Tool Calling", "FastAPI", "MongoDB Atlas", "Redis"]
+    },
+    {
+      "Label": "Maly Tech · FinTech Conversational AI",
+      "Title": "Luna — RAG Financial Assistant",
+      "Description": "Developed <span class='underline'>Luna</span>, a conversational AI financial assistant leveraging <span class='underline'>RAG, prompt engineering, and dynamic context injection</span> to deliver grounded, personalized answers to user financial inquiries—associated with a reported <span class='underline'>60% reduction</span> in routine customer-support tickets.",
+      "Highlights": [
+        "Structured context injection combining user financial context with curated knowledge-base retrieval",
+        "Guardrail-aware prompt engineering designed for safe consumer financial guidance"
+      ],
+      "imgs": [
+        "assets/images/luna/image1.webp",
+        "assets/images/luna/image2.webp",
+        "assets/images/luna/image3.webp"
+      ],
       "demoLink": "https://play.google.com/store/apps/details?id=com.save.app.save",
-      "Technologies": ["Python","Google ADK", "RAG", "LLM", "FastAPI", "MongoDB Atlas", "Rides"]
+      "Technologies": ["Python", "Google ADK", "RAG", "Prompt Engineering", "FastAPI", "MongoDB Atlas", "Redis"]
     },
     {
-      "Title": "AI4ALL",
-      "Description": "<span class='underline'>AI4ALL</span> is a multi-tenant AI platform for rapidly deploying and demonstrating customer-specific AI agents and prototypes with Google ADK, agent orchestration, and tool calling—cutting new prototype delivery from days or weeks to hours.",
-      "imgs": ["assets/images/ai4all/ai_concierge.webp","assets/images/ai4all/salma1.webp","assets/images/ai4all/salma2.webp","assets/images/ai4all/akaliza1.webp","assets/images/ai4all/akaliza2.webp"],
-      "Technologies": ["Python", "Google ADK", "FastAPI", "LLM", "MongoDB Atlas", "Rides"]
-    },
-    {
-      "Title": "MALY's data ingestion pipeline",
-      "Description": "<span class='underline'>Ingestion pipeline</span> automates parsing, chunking, and vectorization of diverse document formats for AI assistant knowledge bases—forming the core of Maly’s RAG architecture for consistent, efficient retrieval across applications.",
-      "imgs": ["assets/images/data_pipeline/image1.webp","assets/images/data_pipeline/image2.webp"],
-      "Technologies": ["Python", "FastAPI", "RAG", "Docling", "Rides"]
+      "Label": "Maly Tech · Document Intelligence Architecture",
+      "Title": "Enterprise RAG Data Ingestion Hub",
+      "Description": "Designed and implemented the core <span class='underline'>multi-tenant document ingestion pipeline</span> powering Maly’s RAG ecosystems—automating layout-aware parsing, semantic/late chunking, and vectorization across diverse enterprise document formats for consistent, low-latency retrieval.",
+      "Highlights": [
+        "Unified extraction and chunking pipes using Docling, Hugging Face tokenizers, Jina embeddings, and Redis caching",
+        "Decoupled Clean Architecture design enabling downstream AI assistants to onboard new corpora rapidly"
+      ],
+      "imgs": [
+        "assets/images/data_pipeline/image1.webp",
+        "assets/images/data_pipeline/image2.webp"
+      ],
+      "Technologies": ["Python", "FastAPI", "Docling", "Jina Embeddings", "SentenceTransformers", "Redis"]
     }
   ],
-  "OtherProjects.Title": "More personal projects",
+
+  "OtherProjects.Title": "Open-Source & Architecture Projects",
+  "OtherProjects.Subtitle": "Public GitHub repositories demonstrating Clean Architecture, multi-agent LangGraph orchestration, RAG pipelines, and local-first AI tools",
   "OtherProjects.Projects": [
     {
-      "Title": "Multi-Agent Travel Planner",
-      "Description": "LangChain and LangGraph multi-agent travel planner that orchestrates specialized agents and dynamically provisions destination-specific RAG knowledge bases when information is unavailable from the indexed knowledge base.",
-      "demoLink": "",
-      "ghLink": "https://github.com/eng-mostafa-alrahal/autonomous-travel-guide",
-      "Technologies": ["Python", "LangChain", "LangGraph", "FastAPI", "RAG", "pgvector", "Rides"]
-    },
-    {
-      "Title": "Document Processing Service",
-      "Description": "Multi-tenant data ingestion service for RAG systems that automates parsing and vectorization of PDFs, DOCX, PPTX, TXT, and MD using Docling, LlamaParse, and Jina’s late chunking—accelerating the creation of new agentic RAG applications.",
-      "demoLink": "",
-      "ghLink": "https://github.com/eng-mostafa-alrahal/rag-document-processor",
-      "Technologies": ["Python", "FastAPI", "Docling", "LlamaParse", "Jina", "Rides"]
-    },
-    {
-      "Title": "Fruitful Tree Count Management",
-      "Description": "Full-stack farm management system uses Computer Vision, specifically low-cost spectral signature recognition on satellite images, for automated fruit tree counting, change detection using Google Earth Engine and comprehensive farm management services.",
-      "ghLink": "https://github.com/eng-mostafa-alrahal/fruitful-tree-count-management",
-      "demoLink": "https://www.linkedin.com/posts/nabil-ghosn_ai-agritech-innovation-activity-7268596532893941760-49ia?utm_source=share&utm_medium=member_desktop&rcm=ACoAADlGAoABxYXjgrq2tdz9_iIhgwV_ueH3hNs",
-      "Technologies": ["Django", "GEE", "Python", "OpenCV"]
-    },
-    {
+      "Badge": "Featured Reference Backend · 2026",
       "Title": "LangGraph Agent — Clean Architecture",
-      "Description": "Demonstrates how to ship a serious agent backend: orchestration with LangChain and LangGraph, real auth and persistence, optional background jobs, and MCP for external tools—structured so teams can extend modules without rewriting the core.",
+      "Description": "Production-oriented FastAPI & LangGraph reference backend structured with strict Clean Architecture and vertical modules. Features JWT-authenticated chat & SSE streaming, async PostgreSQL/SQLAlchemy persistence, Redis, optional Celery workers, Human-in-the-Loop (HITL) approval resume endpoints, startup MCP tool integration with collision protection, and unit/integration tests.",
       "demoLink": "",
       "ghLink": "https://github.com/eng-mostafa-alrahal/langgraph-agent-clean-architecture",
-      "Technologies": ["Python", "FastAPI", "LLM", "LangChain", "LangGraph", "postgres"]
+      "Technologies": ["Python", "FastAPI", "LangGraph", "Async SQLAlchemy", "PostgreSQL", "Redis", "Celery", "MCP", "Pytest"]
     },
     {
-      "Title": "Academic AI Projects",
-      "Description": "Applied NLP, computer-vision, deep-learning, and machine-learning projects (2021–2024), including hand-gesture recognition, text classification, and income prediction using OpenCV, Scikit-learn, and PyTorch.",
+      "Badge": "Local-First AI + Chrome MV3 · 2026",
+      "Title": "JobRecall — AI Job Intelligence & Extension",
+      "Description": "Local-first Chrome Manifest V3 Side Panel extension backed by a Dockerized Python FastAPI, SQLite (WAL), and LangChain service. Resolves job postings across LinkedIn, Indeed, Workday, Greenhouse, and Lever in <1s to prevent duplicate applications, and extracts verbatim quote-verified eligibility gates via Pydantic v2 structured LLM outputs.",
       "demoLink": "",
-      "ghLink": "",
-      "Technologies": ["Python", "OpenCV", "Scikit-learn", "PyTorch", "NLP", "CV"]
+      "ghLink": "https://github.com/eng-mostafa-alrahal/job-recall",
+      "Technologies": ["Python", "FastAPI", "LangChain", "Pydantic v2", "SQLite WAL", "TypeScript", "Chrome MV3", "Docker"]
+    },
+    {
+      "Badge": "Multi-Agent RAG System · 2026",
+      "Title": "Autonomous Travel Guide — Multi-Agent Planner",
+      "Description": "LangGraph multi-agent backend that gathers trip requirements via HITL, dispatches parallel specialist agents (city expert, hotels, flights/logistics, dining), clusters POIs, and dynamically builds destination-specific RAG knowledge bases when indexed data is missing.",
+      "demoLink": "",
+      "ghLink": "https://github.com/eng-mostafa-alrahal/autonomous-travel-guide",
+      "Technologies": ["Python", "LangGraph", "FastAPI", "RAG", "HITL", "Redis", "GCE CI/CD"]
+    },
+    {
+      "Badge": "Cloud-Ready Ingestion Pipeline · 2026",
+      "Title": "Multi-Tenant RAG Document Processor",
+      "Description": "Asynchronous RAG ingestion service built with FastAPI, Celery, PostgreSQL, MinIO/S3, and Redis Streams. Automates parsing and vectorization of PDF, DOCX, PPTX, TXT, Markdown, and URLs using Docling, LlamaParse, and late chunking, with API-key auth and Google Cloud Run CI/CD.",
+      "demoLink": "",
+      "ghLink": "https://github.com/eng-mostafa-alrahal/rag-document-processor",
+      "Technologies": ["Python", "FastAPI", "Docling", "LlamaParse", "Celery", "Redis Streams", "Cloud Run"]
+    },
+    {
+      "Badge": "Streaming Agent Frontend · 2026",
+      "Title": "Autonomous Travel Guide UI",
+      "Description": "ChatGPT-style Angular 22 standalone web client for the Autonomous Travel Guide API. Supports real-time SSE phase-progress streaming, interactive Human-in-the-Loop (HITL) approval cards for requirement gathering and knowledge-base research, session history management, and JWT token rotation.",
+      "demoLink": "",
+      "ghLink": "https://github.com/eng-mostafa-alrahal/autonomous-travel-guide-ui",
+      "Technologies": ["Angular 22", "TypeScript", "SSE Streaming", "Human-in-the-Loop UI", "JWT Auth", "RxJS"]
+    },
+    {
+      "Badge": "Graduation Project · 1st Place National Award · 2024",
+      "Title": "Fruitful Tree Count Management",
+      "Description": "Led a satellite-imagery computer vision and geospatial farm management system built with GeoDjango, OpenCV, Google Earth Engine, and PostGIS. Developed and evaluated the computer-vision and deep-learning algorithms for automated fruit-tree detection (>90% reported accuracy; 1st Place in the National Programming Competition).",
+      "ghLink": "https://github.com/eng-mostafa-alrahal/fruitful-tree-count-management",
+      "demoLink": "https://www.linkedin.com/posts/nabil-ghosn_ai-agritech-innovation-activity-7268596532893941760-49ia",
+      "Technologies": ["Python", "OpenCV", "GeoDjango", "Google Earth Engine", "PostGIS", "Computer Vision"]
     }
   ],
-  "Contact.Pretitle": "What’s Next",
-  "Contact.Title": "Get in touch!",
-  "Contact.Content": "I will be happy to receive your contact if you want to talk about new opportunities. Write me, and I will reply as soon as I see your message.",
-  "Contact.Btn": "Say Hello",
-  "Contact.Email": "mostafa.kha.alrahal@gmail.com"
+
+  "Contact.Pretitle": "What’s Next?",
+  "Contact.Title": "Let’s Build Production AI Together",
+  "Contact.Content": "I am based in Pittsburgh, PA, open to relocate, and hold U.S. Permanent Residency (no visa sponsorship required). Whether you are hiring for an Applied AI Engineer, LLM / RAG Systems Engineer, or Python AI Backend Engineer role, I would welcome the opportunity to connect.",
+  "Contact.Btn": "Send an Email",
+  "Contact.Email": "mostafa.kha.alrahal@gmail.com",
+  "Contact.Phone": "+1 (724) 351-7270",
+  "Contact.LinkedIn": "https://www.linkedin.com/in/mostafa-alrahal-368972229/",
+  "Contact.GitHub": "https://github.com/eng-mostafa-alrahal"
 }

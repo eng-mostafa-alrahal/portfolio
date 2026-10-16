@@ -22,12 +22,21 @@ export class MoreProyectsComponent implements OnInit {
             window.scrollTo(0, 0)
         });
     }
+
+    onLinkClick(event: Event, eventName: string) {
+      event.stopPropagation();
+      this.analyticsService.sendAnalyticEvent(eventName, 'proyects', 'click');
+    }
+
     redirect(route: string, event) {
-      const id = event.target.id;
-      if(id=='demoLink' || id=='ghLink'){
-        return
+      if (!route) {
+        return;
       }
-      window.open(route, '_blank');
+      const id = event && event.target ? event.target.id : '';
+      if (id === 'demoLink' || id === 'ghLink') {
+        return;
+      }
+      window.open(route, '_blank', 'noopener,noreferrer');
     }
 
 }

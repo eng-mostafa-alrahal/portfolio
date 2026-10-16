@@ -1,0 +1,76 @@
+{
+  "name": "Mostafa Alrahal",
+  "headline": "Applied AI Engineer | RAG, LLM Applications & Agentic Systems",
+  "location": "Pittsburgh, PA (open to relocate)",
+  "workAuthorization": "U.S. Permanent Resident; no sponsorship required",
+  "email": "mostafa.kha.alrahal@gmail.com",
+  "phone": "+1 (724) 351-7270",
+  "url": "https://eng-mostafa-alrahal.github.io/portfolio/",
+  "sameAs": [
+    "https://www.linkedin.com/in/mostafa-alrahal-368972229/",
+    "https://github.com/eng-mostafa-alrahal"
+  ],
+  "resume": "https://eng-mostafa-alrahal.github.io/portfolio/assets/cv/MOSTAFA_ALRAHAL_RESUME.pdf",
+  "summary": "Applied AI engineer building enterprise retrieval-augmented generation (RAG), multi-agent workflows, and multi-tenant AI applications in Python. At Maly Tech Ltd, contributed to the AI assistant for Deloitte Middle East's ME Tax Pulse and developed reusable customer-specific agent platforms.",
+  "experience": [
+    {
+      "organization": "Maly Tech Ltd",
+      "title": "Generative AI Engineer",
+      "location": "Dubai, UAE",
+      "startDate": "2024-08",
+      "endDate": "2026-05",
+      "highlights": [
+        "Contributed to the AI assistant for Deloitte Middle East's ME Tax Pulse with RAG and LangGraph workflows over thousands of tax and legal documents.",
+        "Built AI4ALL, a multi-tenant platform for customer-specific AI agents using Python, Google ADK, and tool calling.",
+        "Developed Luna, a RAG-powered financial assistant associated with a reported 60% reduction in routine support tickets."
+      ]
+    },
+    {
+      "organization": "Freelance",
+      "title": "Software Developer",
+      "startDate": "2023-10",
+      "endDate": "2024-08",
+      "highlights": [
+        "Developed and maintained web applications with Angular, Laravel, and REST APIs."
+      ]
+    }
+  ],
+  "education": {
+    "institution": "Damascus University",
+    "degree": "B.S., Information Technology Engineering (AI & NLP specialization)",
+    "endDate": "2025",
+    "gpa": "3.78/4.0",
+    "credential": "WES-evaluated U.S. bachelor's degree equivalency"
+  },
+  "projects": [
+    {
+      "name": "LangGraph Agent — Clean Architecture",
+      "url": "https://github.com/eng-mostafa-alrahal/langgraph-agent-clean-architecture"
+    },
+    {
+      "name": "JobRecall",
+      "url": "https://github.com/eng-mostafa-alrahal/job-recall"
+    },
+    {
+      "name": "Autonomous Travel Guide",
+      "url": "https://github.com/eng-mostafa-alrahal/autonomous-travel-guide"
+    },
+    {
+      "name": "RAG Document Processor",
+      "url": "https://github.com/eng-mostafa-alrahal/rag-document-processor"
+    },
+    {
+      "name": "Autonomous Travel Guide UI",
+      "url": "https://github.com/eng-mostafa-alrahal/autonomous-travel-guide-ui"
+    },
+    {
+      "name": "Fruitful Tree Count Management",
+      "url": "https://github.com/eng-mostafa-alrahal/fruitful-tree-count-management"
+    }
+  ],
+  "skills": {
+    "aiAndData": ["RAG", "LLM applications", "LangGraph", "LangChain", "Google ADK", "multi-agent orchestration", "tool calling", "prompt engineering", "vector databases", "Docling", "LlamaParse"],
+    "softwareAndInfrastructure": ["Python", "FastAPI", "REST APIs", "SSE/WebSockets", "PostgreSQL", "MongoDB", "Redis", "Docker", "Git", "GCP", "TypeScript", "Angular", "Laravel"],
+    "additionalMl": ["PyTorch", "scikit-learn", "OpenCV", "NLP", "computer vision"]
+  }
+}

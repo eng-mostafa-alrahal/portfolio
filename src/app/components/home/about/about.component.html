@@ -7,8 +7,9 @@
           {{ "AboutMe.Title" | translate }}
         </h3>
       </div>
-      <div class="row">
-        <div class="col-12 col-md-6 mb-4 mb-md-0">
+
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-7 mb-4 mb-lg-0">
           <div class="about-description">
             <p
               *ngFor="let text of 'AboutMe.Paragraphs' | translate"
@@ -16,42 +17,88 @@
               data-aos="fade-up"
               data-aos-duration="1000"
             ></p>
+
+            <div class="profile-facts-grid mt-4" data-aos="fade-up" data-aos-duration="1000">
+              <div class="profile-fact-item" *ngFor="let fact of 'AboutMe.ProfileFacts' | translate">
+                <i [class]="fact.Icon + ' fact-icon'"></i>
+                <div class="fact-content">
+                  <span class="fact-label">{{ fact.Label }}</span>
+                  <span class="fact-value">{{ fact.Value }}</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
         <div
-          class="col-12 col-md-6 mt-4 mt-md-0 text-center"
+          class="col-12 col-lg-5 mt-4 mt-lg-0 text-center"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
           <div class="about-img-container">
-            <img
-              (click)="
-                analyticsService.sendAnalyticEvent(
-                  'click_image',
-                  'about',
-                  'image'
-                )
-              "
-              width="300"
-              height="300"
-              src="assets/images/me/mostafa.jpg"
-              alt="Git User"
-            />
+            <div class="avatar-ring">
+              <img
+                (click)="
+                  analyticsService.sendAnalyticEvent(
+                    'click_image',
+                    'about',
+                    'image'
+                  )
+                "
+                width="280"
+                height="280"
+                src="assets/images/me/mostafa.jpg"
+                alt="Mostafa Alrahal"
+              />
+            </div>
+            <div class="profile-badge-card mt-3">
+              <div class="badge-name">Mostafa Alrahal</div>
+              <div class="badge-role">Applied AI & LLM Backend Engineer</div>
+              <div class="badge-auth">U.S. Permanent Resident · No Sponsorship Needed</div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row" data-aos="fade-up" data-aos-duration="1000">
-        <div class="col-12 mb-4 mb-md-0">
-          <ul class="skills-list" data-aos="fade-up">
-            <li
-              *ngFor="let skill of 'AboutMe.Skills' | translate"
-              class="skill-element"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              <span class="underline">{{ skill }}</span>
-            </li>
-          </ul>
+
+      <!-- Engineering Pillars: How I Engineer Production AI Systems -->
+      <div class="pillars-section mt-5 pt-4" data-aos="fade-up" data-aos-duration="1000">
+        <h4 class="subsection-heading">
+          <span class="heading-accent">//</span> {{ "AboutMe.PillarsTitle" | translate }}
+        </h4>
+        <div class="row mt-3">
+          <div
+            class="col-12 col-md-4 mb-4"
+            *ngFor="let pillar of 'AboutMe.Pillars' | translate"
+          >
+            <div class="pillar-card h-100">
+              <div class="pillar-icon-wrap">
+                <i [class]="pillar.Icon"></i>
+              </div>
+              <div class="pillar-subtitle">{{ pillar.Subtitle }}</div>
+              <h5 class="pillar-title">{{ pillar.Title }}</h5>
+              <p class="pillar-desc mb-0">{{ pillar.Description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categorized Technical Stack -->
+      <div class="skills-section mt-4 pt-3" data-aos="fade-up" data-aos-duration="1000">
+        <h4 class="subsection-heading">
+          <span class="heading-accent">//</span> {{ "AboutMe.SkillsTitle" | translate }}
+        </h4>
+        <div class="row mt-3">
+          <div
+            class="col-12 col-md-4 mb-4"
+            *ngFor="let group of 'AboutMe.SkillCategories' | translate"
+          >
+            <div class="skill-category-card h-100">
+              <h5 class="skill-category-title">{{ group.Category }}</h5>
+              <div class="skill-badges-wrap">
+                <span class="tech-badge" *ngFor="let item of group.Items">{{ item }}</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -1,22 +1,36 @@
-<section class="section banner">
+<section class="section banner" id="banner">
     <div [@bannerTrigger] class="container">
         <div class="section-box-banner">
             <div class="content">
-                <div>
-                    <!-- <h1>Hola, mi nombre es</h1> -->
-                    <h1>Hello! My name is</h1>
+                <div class="status-pill-wrap">
+                    <span class="status-pill">
+                        <span class="status-dot"></span>
+                        {{ "Banner.BadgeLocation" | translate }}
+                    </span>
+                    <span class="status-pill">
+                        {{ "Banner.BadgeAuth" | translate }}
+                    </span>
+                </div>
+                <div class="mt-3">
+                    <h1>{{ "Banner.Pretitle" | translate }}</h1>
                 </div>
                 <div class='banner-title'>
-                    <h2>Mostafa Alrahal.</h2>
-                    <h3>Applied AI Engineer</h3>
+                    <h2 class="hero-name">{{ "Banner.Name" | translate }}</h2>
+                    <h3 class="hero-role">{{ "Banner.Role" | translate }}</h3>
                 </div>
                 <div class='banner-description'>
                     <p [innerHTML]='"Banner.Description" | translate' class="mt-4"></p>
                 </div>
             </div>
             <div class="div-btn-banner">
-                <a (click)='analyticsService.sendAnalyticEvent("click_send_mail", "banner", "email")' href="mailto:{{ 'Contact.Email' | translate }}" target="_blank" class="main-btn">
-                    {{"Banner.ActionBtn" | translate}}
+                <a (click)='analyticsService.sendAnalyticEvent("click_send_mail", "banner", "email")' href="mailto:{{ 'Contact.Email' | translate }}" target="_blank" class="primary-btn">
+                    <i class="fas fa-paper-plane"></i> {{"Banner.ActionBtn" | translate}}
+                </a>
+                <a href="https://github.com/eng-mostafa-alrahal" target="_blank" rel="noopener noreferrer" class="main-btn">
+                    <i class="fab fa-github"></i> {{"Banner.SecondaryBtn" | translate}}
+                </a>
+                <a href="https://www.linkedin.com/in/mostafa-alrahal-368972229/" target="_blank" rel="noopener noreferrer" class="social-pill-link" title="LinkedIn Profile">
+                    <i class="fab fa-linkedin-in"></i> LinkedIn
                 </a>
             </div>
         </div>

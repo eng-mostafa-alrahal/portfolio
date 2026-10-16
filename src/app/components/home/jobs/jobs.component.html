@@ -11,18 +11,20 @@
                     <li *ngFor='let job of "Experience.Jobs" | translate; let i = index' [title]="job.Tab" [ngbNavItem]="i">
                       <a ngbNavLink>{{job.Tab}}</a>
                         <ng-template ngbNavContent>
-                          <h4 class='title-tab-content'>{{job.Title}} | <span class="company-tab-content">{{job.Tab}}</span></h4>
-                          <h5 class="job-time">{{job.Date}}</h5>
-                          <!-- {{job.Description | json}} -->
-                          <p *ngFor='let jobDescriptionParagraph of job.Description; let i = index' class="job-description"
-                          [innerHTML]="jobDescriptionParagraph | translate"></p>
-                          <span></span>
+                          <div class="job-panel">
+                            <h4 class='title-tab-content'>
+                              {{job.Title}}
+                              <span class="company-tab-content"> · {{job.CompanyFull || job.Tab}}</span>
+                            </h4>
+                            <h5 class="job-time">{{job.Date}}</h5>
+                            <p *ngFor='let jobDescriptionParagraph of job.Description; let i = index' class="job-description"
+                            [innerHTML]="jobDescriptionParagraph | translate"></p>
+                          </div>
                         </ng-template>
                     </li>
               </ul>
-              <div [ngbNavOutlet]="nav" class="mt-2"></div>
+              <div [ngbNavOutlet]="nav" class="mt-2 flex-grow-1"></div>
             </div>
-
         </div>
     </div>
 </section>

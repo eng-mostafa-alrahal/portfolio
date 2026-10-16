@@ -1,78 +1,116 @@
 @import "./../../../../variables.scss";
 
-.contact{
-
+.contact {
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 820px;
     text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
-    height: 100vh;
-    display: table;
+    padding: 40px 0 80px;
 
-    .container{
-        display: table-cell;
-        vertical-align: middle;
+    .contact-card {
+        background: rgba(15, 23, 42, 0.8);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid $CardBorder;
+        border-radius: 16px;
+        padding: 52px 40px;
+        box-shadow: 0 24px 48px -18px rgba(2, 8, 23, 0.85);
     }
 
-    .contact-title{
-
-        position: relative;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-align-items: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        white-space: nowrap;
-        font-size: 60px;
-        font-weight: 600;
+    .contact-title {
+        font-size: 46px;
+        font-weight: 700;
         color: $LightestSlate;
-        margin: auto;
-        width: fit-content;
+        margin: 0 auto;
+        line-height: 1.15;
     }
-    .contact-pre-title{
-        position: relative;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-align-items: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        margin: 10px 0 40px;
-        width: 100%;
-        white-space: nowrap;
-        font-size: 32px;
+
+    .contact-pre-title {
         display: block;
-        color: $Green;
-        font-size: 16px;
+        color: $AccentBlue;
+        font-size: 15px;
         font-family: $CodeFont;
-        font-weight: normal;
-        margin-bottom: 20px;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
+        font-weight: 500;
+        margin-bottom: 14px;
         text-align: center;
     }
 
+    .contact-text {
+        max-width: 620px;
+        margin: 0 auto;
+        color: $LightSlate;
+        font-size: 18px;
+        line-height: 1.65;
+    }
+
+    .contact-actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .contact-direct-meta {
+        border-top: 1px solid rgba(56, 189, 248, 0.14);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-family: $CodeFont;
+        font-size: 12.5px;
+        color: $Slate;
+
+        .meta-item {
+            color: $LightSlate;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+
+            i {
+                color: $AccentBlue;
+            }
+        }
+
+        a.meta-item:hover {
+            color: $AccentBlue;
+        }
+
+        .meta-divider {
+            color: $Slate;
+        }
+    }
 }
 
-@media (max-width: 768px){
-    
-    .contact{
-        height: 100vh;
-        padding: 0 !important;
-        margin: 0 auto !important;
-        display: table;
+@media (max-width: 768px) {
+    .contact {
+        padding: 20px 0 60px;
 
-        .container{
-            display: table-cell;
-            vertical-align: middle;
+        .contact-card {
+            padding: 32px 20px;
+        }
+        .contact-title {
+            font-size: 30px !important;
+        }
+        .contact-text {
+            font-size: 16.5px;
+        }
+        .contact-actions {
+            flex-direction: column;
+            gap: 10px;
+
+            .primary-btn,
+            .main-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        .contact-direct-meta {
+            flex-direction: column;
+            gap: 8px;
+
+            .meta-divider {
+                display: none;
+            }
         }
     }
 }

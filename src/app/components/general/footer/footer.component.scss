@@ -1,89 +1,106 @@
 @import "./../../../../variables.scss";
 
-footer{
+footer {
     color: $LightSlate;
 
-    .footer-left-bar:after, .footer-right-bar:after{
+    .footer-left-bar:after,
+    .footer-right-bar:after {
         content: '';
         display: block;
         width: 1px;
         height: 90px;
         margin: 0 auto;
-        background-color: $LightSlate;
+        background: linear-gradient(180deg, rgba(56, 189, 248, 0.55) 0%, rgba(148, 163, 184, 0.15) 100%);
     }
 
-    .footer-left-bar li, .footer-right-bar li{
+    .footer-left-bar li,
+    .footer-right-bar li {
         list-style: none;
     }
 
-    .footer-left-bar{
+    .footer-left-bar {
         position: fixed;
         bottom: -16px;
-        left: 51px;
+        left: 42px;
         padding: 0;
+        z-index: 5;
 
-        i{
-            font-size: 19px;
-            color: $LightSlate;
+        a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s ease, color 0.2s ease;
+
+            &:hover {
+                transform: translateY(-3px);
+
+                i {
+                    color: $AccentBlue;
+                }
+            }
         }
 
-        li{
+        i {
+            font-size: 19px;
+            color: $LightSlate;
+            transition: color 0.2s ease;
+        }
+
+        li {
             margin: 20px 0px;
 
             &:last-of-type {
-                margin-bottom: 33px;
+                margin-bottom: 28px;
             }
         }
     }
 
-    .footer-right-bar{
+    .footer-right-bar {
         position: fixed;
         bottom: 0px;
-        right: 41px;
+        right: 36px;
         padding: 0;
+        z-index: 5;
 
-        li{
-            transform: rotate(90deg);
-        }
-
-        a{
+        a {
             font-family: $CodeFont;
             font-size: 12px;
-            -webkit-letter-spacing: 0.1em;
-            -moz-letter-spacing: 0.1em;
-            -ms-letter-spacing: 0.1em;
             letter-spacing: 0.1em;
-            -webkit-writing-mode: vertical-rl;
-            -ms-writing-mode: tb-rl;
             writing-mode: vertical-rl;
             margin: 20px auto;
             padding: 10px;
             color: $LightSlate;
+            transition: transform 0.2s ease, color 0.2s ease;
+
+            &:hover {
+                color: $AccentBlue;
+                transform: translateY(-3px);
+            }
         }
     }
-    .footer-credits{
-        font-family: $CodeFont;
-        font-size: 12px;
-        line-height: 1;
-    
-        position: absolute;
-        margin: auto;
-        left: 0;
-        right: 0;
-        margin-top: -60px;
 
-        a{
+    .footer-mobile-bar {
+        justify-content: center;
+        align-items: center;
+        gap: 22px;
+        list-style: none;
+        margin: 0 0 18px;
+        padding: 0 16px 8px;
+        padding-bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+
+        a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
             color: $LightSlate;
-            -webkit-transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-            transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-            transition-property: all;
-            transition-duration: 0.25s;
-            transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-            transition-delay: 0s;
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid $CardBorder;
 
-            &:hover, &:focus {
-                text-decoration: none;
-                color: $Green;
+            i {
+                font-size: 18px;
             }
         }
     }

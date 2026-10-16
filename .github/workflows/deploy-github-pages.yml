@@ -37,6 +37,12 @@ jobs:
         run: |
           cp dist/mostafa-alrahal-portfolio/index.html dist/mostafa-alrahal-portfolio/404.html
           touch dist/mostafa-alrahal-portfolio/.nojekyll
+          test -f dist/mostafa-alrahal-portfolio/llms.txt
+          test -f dist/mostafa-alrahal-portfolio/profile.json
+          test -f dist/mostafa-alrahal-portfolio/profile.html
+          test -f dist/mostafa-alrahal-portfolio/robots.txt
+          test -f dist/mostafa-alrahal-portfolio/sitemap.xml
+          test -f dist/mostafa-alrahal-portfolio/.well-known/llms.txt
 
       - uses: actions/configure-pages@v5
 

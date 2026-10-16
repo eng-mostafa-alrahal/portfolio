@@ -1,62 +1,88 @@
-# Mostafa Alrahal — Portfolio
+# Mostafa Alrahal — Applied AI Engineer Portfolio
 
-I build end-to-end, production-ready **LLM applications** and **RAG systems**, from scalable data ingestion to agentic workflows. I work mainly in `Python, FastAPI, LangChain, LangGraph, and Google ADK`, with strong data experience in `Neo4j` and `MongoDB`. This portfolio is built with **Angular** to showcase experience, projects, and contact—clean, reusable structure and sensible front-end patterns.
+> **Project Target:** Personal engineering portfolio (`https://eng-mostafa-alrahal.github.io/portfolio/`) positioning **Mostafa Alrahal** as an **Applied AI Engineer (RAG, LLM Applications & Agentic Systems)** based in **Pittsburgh, PA** (U.S. Permanent Resident; no sponsorship required). Beyond listing past roles, the site demonstrates **how production AI systems are architected**—combining enterprise case studies from **Maly Tech Ltd** (including contributions to **Deloitte Middle East’s ME Tax Pulse**), core AI engineering pillars, categorized technical capabilities, and inspectable open-source repositories.
 
-Click the link below to open my portfolio.
+Live Portfolio: **<https://eng-mostafa-alrahal.github.io/portfolio/>**
 
-<https://eng-mostafa-alrahal.github.io/portfolio/>
+---
 
-## Site overview
+## Site Architecture & Sections
 
-- **About me** — Background, stack, and skills (`AboutMe.Skills` in `en.json`)
-- **Experience** — GenAI at MALY, freelance software development
-- **Projects** — Deloitte AI Tax Assistant, Luna, AI4ALL, data ingestion pipeline, plus personal projects (Multi-Agent Travel Planner, Document Processing Service, Academic AI Projects, and more)
-- **Contact** — [mostafa.kha.alrahal@gmail.com](mailto:mostafa.kha.alrahal@gmail.com)
+All content and structured data live in `src/assets/i18n/en.json`:
 
-Content strings live in `src/assets/i18n/` (for example `en.json`). The contact address is defined there as `Contact.Email`. Skills under About are driven by `AboutMe.Skills`.
+1. **Hero / Banner (`Banner.*`)**
+   - Location & work-authorization status badges (`Pittsburgh, PA · Open to Relocate` and `U.S. Permanent Resident · No Sponsorship Required`)
+   - Role positioning (`APPLIED AI ENGINEER | RAG, LLM APPLICATIONS & AGENTIC SYSTEMS`)
+   - Direct actions (`Get in Touch`, `View Open-Source Code`, `LinkedIn`)
 
-Featured projects under `FeatureProjects.Projects` each need an `imgs` array (paths under `src/assets/images/`). Desktop and mobile both use the carousel (swipe / drag between shots); tall screenshots can also scroll inside the image area.
+2. **`01. About & Engineering Approach` (`AboutMe.*`)**
+   - **Narrative & Profile Facts**: Background, Pittsburgh location, U.S. Permanent Residency, and **Damascus University B.S. in IT Engineering (AI & NLP Specialization, 3.78/4.0 GPA, WES-Evaluated U.S. Bachelor’s Equivalency)**.
+   - **How I Engineer Production AI Systems (`AboutMe.Pillars`)**:
+     - *Document Intelligence & High-Precision RAG* (`Docling`, `LlamaParse`, context-preserving chunking, vector databases, verbatim quote verification)
+     - *Stateful Multi-Agent Orchestration* (`LangGraph`, `Google ADK`, parallel `Send` execution, Human-in-the-Loop approval gates, `MCP` tool sandboxing)
+     - *Clean Architecture AI Backends* (`Python`, `FastAPI`, async `SQLAlchemy 2.0`/`PostgreSQL`, `Redis`/`Celery`, JWT auth, `pytest` suites)
+   - **Categorized Technical Stack (`AboutMe.SkillCategories`)**: Grouped into *AI, LLMs & Data*, *Software & Infrastructure*, and *Additional ML & Computer Vision*.
 
-## Development server
+3. **`02. Experience & Education` (`Experience.Jobs`)**
+   - **Maly Tech Ltd** — *Generative AI Engineer* (Dubai, UAE | Aug 2024 – May 2026)
+   - **Freelance** — *Software Developer* (Oct 2023 – Aug 2024)
+   - **Education** — *Damascus University | B.S. in Information Technology Engineering (AI & NLP)* (2025 | 3.78/4.0 GPA | WES-Evaluated U.S. Bachelor's Equivalency)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+4. **`03. Enterprise AI Case Studies` (`FeatureProjects.Projects`)**
+   - **ME Tax Pulse — AI Tax & Legal Assistant** (*Maly Tech · Enterprise Client: Deloitte Middle East*) — includes Google Play link and Deloitte’s official August 2025 press release.
+   - **AI4ALL — Customer-Specific Agent Platform** (*Maly Tech · Multi-Tenant Agent Platform*)
+   - **Luna — RAG Financial Assistant** (*Maly Tech · FinTech Conversational AI*)
+   - **Enterprise RAG Data Ingestion Hub** (*Maly Tech · Document Intelligence Architecture*)
 
-You can also run `npm start`, which invokes the same dev server.
+5. **`04. Open-Source & Architecture Projects` (`OtherProjects.Projects`)**
+   - [**LangGraph Agent — Clean Architecture**](https://github.com/eng-mostafa-alrahal/langgraph-agent-clean-architecture) — Production-oriented FastAPI + LangGraph reference backend with JWT auth, async PostgreSQL/SQLAlchemy, Redis, Celery, HITL approval, MCP tool integration, and tests.
+   - [**JobRecall — AI Job Intelligence & Chrome Extension**](https://github.com/eng-mostafa-alrahal/job-recall) — Local-first Chrome Manifest V3 Side Panel extension + Dockerized Python FastAPI, SQLite (WAL), and LangChain service for <1s duplicate application detection and verbatim quote-verified eligibility extraction.
+   - [**Autonomous Travel Guide — Multi-Agent Planner**](https://github.com/eng-mostafa-alrahal/autonomous-travel-guide) — LangGraph multi-agent planner with parallel specialist execution, HITL approval, and dynamic destination-scoped RAG knowledge base creation.
+   - [**Multi-Tenant RAG Document Processor**](https://github.com/eng-mostafa-alrahal/rag-document-processor) — FastAPI + Celery + Redis Streams ingestion pipeline using Docling, LlamaParse, and late chunking with Cloud Run CI/CD.
+   - [**Autonomous Travel Guide UI**](https://github.com/eng-mostafa-alrahal/autonomous-travel-guide-ui) — Angular 22 standalone streaming chat client with SSE phase progress and interactive HITL approval cards.
+   - [**Fruitful Tree Count Management**](https://github.com/eng-mostafa-alrahal/fruitful-tree-count-management) — Graduation project **led by Mostafa** using GeoDjango, OpenCV, Google Earth Engine, and PostGIS. He developed and evaluated the AI & computer-vision algorithms for automated fruit-tree detection (>90% reported accuracy; 1st Place in National Programming Competition).
 
-## Code scaffolding
+6. **`05. Contact` (`Contact.*`)**
+   - Direct links to [mostafa.kha.alrahal@gmail.com](mailto:mostafa.kha.alrahal@gmail.com), `+1 (724) 351-7270`, [LinkedIn](https://www.linkedin.com/in/mostafa-alrahal-368972229/), and [GitHub](https://github.com/eng-mostafa-alrahal).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## Theme, Background & Mobile Responsiveness
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. For a production build, use `ng build --configuration production` (or `npm run build` as defined in this project).
+- **Palette:** **Electric AI Blue & Deep Midnight Slate** defined in `src/variables.scss` and `src/styles.scss` (`$Navy: #070d19`, `$LightNavy: #0f172a`, `$AccentBlue: #38bdf8`, `$AccentRoyal: #3b82f6`, `$AccentIndigo: #6366f1`).
+- **Animated AI Graph & Aurora Background (`AppComponent`):** Fixed multi-layer background featuring drifting aurora glows, a radial-masked blueprint grid, and an HTML5 `<canvas>` node-and-edge constellation with traveling pulses. Density scales down on mobile and respects `prefers-reduced-motion`.
+- **Mobile Web Responsiveness:** Optimized across phone (`360px`–`430px`), tablet (`768px`), and desktop viewports with a slide-out mobile drawer, full-width touch-friendly CTA buttons, horizontal scrollable experience tabs, and responsive case-study carousels.
+- **Favicon:** Browser-tab icon is the `MA` monogram (`src/favicon.ico`, `src/assets/images/favicon.svg`, `src/assets/images/favicon-32.png`, and `src/assets/images/apple-touch-icon.png`).
 
-## Deploy (GitHub Pages)
+## Agent and crawler access
 
-Pushing to `main` runs `.github/workflows/deploy-github-pages.yml`, which builds the Angular app with `--base-href /portfolio/` and deploys `dist/mostafa-alrahal-portfolio` through GitHub Pages (GitHub Actions). The workflow also copies `index.html` to `404.html` so Angular routes still load on refresh.
+The interactive site is an Angular SPA. Research browsers that do not execute JavaScript previously saw an empty shell. The live site now also publishes JavaScript-free sources:
 
-The live site is:
+- [llms.txt](https://eng-mostafa-alrahal.github.io/portfolio/llms.txt) — plain-text professional profile (`/.well-known/llms.txt` is also published)
+- [profile.json](https://eng-mostafa-alrahal.github.io/portfolio/profile.json) — structured machine-readable profile
+- [profile.html](https://eng-mostafa-alrahal.github.io/portfolio/profile.html) — full HTML profile with no JavaScript
+- [robots.txt](https://eng-mostafa-alrahal.github.io/portfolio/robots.txt) and [sitemap.xml](https://eng-mostafa-alrahal.github.io/portfolio/sitemap.xml)
+- JSON-LD `Person` markup plus a crawlable `#agent-profile` block and a complete `<noscript>` fallback in `src/index.html`
 
-<https://eng-mostafa-alrahal.github.io/portfolio/>
+After deploy, agents can fetch those URLs with a normal HTTP GET.
 
-The Resume button opens `assets/cv/MOSTAFA_ALRAHAL_RESUME.pdf` from the site `base href`, with `environment.assetVersion` as a cache-busting query. Bump `assetVersion` in `src/environments/environment.prod.ts` whenever the resume PDF or `en.json` copy changes so browsers and the service worker do not keep the old files.
+---
 
-If the first deploy fails, open **Settings → Pages**, set **Source** to **GitHub Actions**, then re-run **Deploy to GitHub Pages**. First-time publishes can take a minute or two after a green Actions run.
+## Development & Build
 
-You can also publish locally with `angular-cli-ghpages`:
-
+### Development server
 ```bash
-npm run deploy
+npm start
+# or: ng serve
 ```
+Navigate to `http://localhost:4200/`.
 
-## Running unit tests
+### Production build
+```bash
+npm run build
+# or: ng build --configuration production
+```
+Build artifacts are output to `dist/mostafa-alrahal-portfolio`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Resume PDF & Cache Busting
+The **Resume** button serves `src/assets/cv/MOSTAFA_ALRAHAL_RESUME.pdf` with `?v=<environment.assetVersion>`. Whenever `MOSTAFA_ALRAHAL_RESUME.pdf` or `src/assets/i18n/en.json` changes, bump `assetVersion` in `src/environments/environment.ts` and `src/environments/environment.prod.ts`.

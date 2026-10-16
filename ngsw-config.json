@@ -10,6 +10,12 @@
           "/favicon.ico",
           "/index.html",
           "/manifest.webmanifest",
+          "/llms.txt",
+          "/profile.json",
+          "/profile.html",
+          "/robots.txt",
+          "/sitemap.xml",
+          "/.well-known/llms.txt",
           "/*.css",
           "/*.js"
         ]

@@ -1,0 +1,60 @@
+# Mostafa Alrahal
+
+> Applied AI Engineer (RAG, LLM applications, and agentic systems). Pittsburgh, PA. Open to relocate. U.S. Permanent Resident; no sponsorship required.
+
+This file is a JavaScript-free, agent-readable summary of https://eng-mostafa-alrahal.github.io/portfolio/
+
+## Contact
+
+- Email: mostafa.kha.alrahal@gmail.com
+- Phone: +1 (724) 351-7270
+- Location: Pittsburgh, PA (open to remote, hybrid, and relocation)
+- Work authorization: U.S. Permanent Resident; no visa sponsorship required
+- LinkedIn: https://www.linkedin.com/in/mostafa-alrahal-368972229/
+- GitHub: https://github.com/eng-mostafa-alrahal
+- Portfolio: https://eng-mostafa-alrahal.github.io/portfolio/
+- Resume PDF: https://eng-mostafa-alrahal.github.io/portfolio/assets/cv/MOSTAFA_ALRAHAL_RESUME.pdf
+- Machine-readable profile: https://eng-mostafa-alrahal.github.io/portfolio/profile.json
+- HTML profile (no JavaScript): https://eng-mostafa-alrahal.github.io/portfolio/profile.html
+
+## Professional summary
+
+Applied AI engineer building enterprise retrieval-augmented generation (RAG), multi-agent workflows, and multi-tenant AI applications in Python. At Maly Tech Ltd, contributed to the AI assistant for Deloitte Middle East's ME Tax Pulse and developed reusable customer-specific agent platforms. Public LangGraph/FastAPI repositories demonstrate backend architecture, authentication, persistence, MCP tool integration, and testing.
+
+## Experience
+
+### Maly Tech Ltd — Generative AI Engineer (Dubai, UAE | Aug 2024 - May 2026)
+
+- Contributed to the AI assistant for Deloitte Middle East's ME Tax Pulse, implementing RAG/LangGraph workflows for ingestion, indexing, and retrieval across thousands of tax and legal documents.
+- Built AI4ALL, a multi-tenant platform for customer-specific AI agents and prototypes using Python, Google ADK, agent orchestration, and tool calling; reduced prototype delivery from days or weeks to hours.
+- Developed Luna, a RAG-powered financial assistant using prompt engineering and context injection; associated with a reported 60% reduction in routine customer-support tickets.
+
+### Freelance — Software Developer (Oct 2023 - Aug 2024)
+
+- Developed and maintained web applications with Angular, Laravel, and REST APIs, integrating backend services and building reusable UI components.
+
+## Education
+
+- Damascus University — B.S., Information Technology Engineering (AI & NLP specialization), 2025
+- GPA: 3.78/4.0
+- WES-evaluated U.S. bachelor's degree equivalency
+- Led the Fruitful Tree Count Management graduation project (satellite imagery computer vision; >90% reported accuracy; 1st Place, National Programming Competition)
+
+## Selected public projects
+
+- LangGraph Agent — Clean Architecture: https://github.com/eng-mostafa-alrahal/langgraph-agent-clean-architecture
+- JobRecall: https://github.com/eng-mostafa-alrahal/job-recall
+- Autonomous Travel Guide: https://github.com/eng-mostafa-alrahal/autonomous-travel-guide
+- RAG Document Processor: https://github.com/eng-mostafa-alrahal/rag-document-processor
+- Autonomous Travel Guide UI: https://github.com/eng-mostafa-alrahal/autonomous-travel-guide-ui
+- Fruitful Tree Count Management: https://github.com/eng-mostafa-alrahal/fruitful-tree-count-management
+
+## Skills
+
+- AI & data: RAG, LLM applications, LangGraph, LangChain, Google ADK, multi-agent orchestration, tool calling, prompt engineering, vector databases, Docling, LlamaParse
+- Software & infrastructure: Python, FastAPI, REST APIs, SSE/WebSockets, PostgreSQL, MongoDB, Redis, Docker, Git, GCP, TypeScript, Angular, Laravel
+- Additional ML: PyTorch, scikit-learn, OpenCV, NLP, computer vision
+
+## Optional
+
+- Deloitte Middle East ME Tax Pulse announcement: https://www.deloitte.com/middle-east/en/about/press-room/deloitte-middle-east-launches-me-tax-pulse.html

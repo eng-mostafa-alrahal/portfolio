@@ -1,3 +1,13 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<div class="ai-bg-wrapper" aria-hidden="true">
+  <div class="ai-aurora ai-aurora-1"></div>
+  <div class="ai-aurora ai-aurora-2"></div>
+  <div class="ai-aurora ai-aurora-3"></div>
+  <div class="ai-grid-overlay"></div>
+  <canvas #networkCanvas class="ai-network-canvas" aria-hidden="true"></canvas>
+</div>
+
+<div class="app-content-layer">
+  <app-header></app-header>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</div>
