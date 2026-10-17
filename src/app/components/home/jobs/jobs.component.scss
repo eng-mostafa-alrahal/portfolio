@@ -145,13 +145,17 @@
 
         ul {
             display: flex !important;
-            overflow-x: auto;
+            flex-direction: row !important;
+            flex-wrap: nowrap;
+            overflow: hidden;
             width: 100% !important;
+            min-width: 0;
             margin-bottom: 18px;
             border-bottom: 1px solid $LightestNavy;
 
             li {
-                flex: 1 0 auto;
+                flex: 1 1 0;
+                min-width: 0;
                 border-left: none !important;
                 border-bottom: 2px solid transparent;
 
@@ -164,8 +168,11 @@
             a.active,
             a:hover {
                 justify-content: center;
+                width: 100%;
                 border-radius: 6px 6px 0 0 !important;
-                padding: 0 16px;
+                padding: 0 8px;
+                font-size: 12px;
+                text-align: center;
             }
         }
     }

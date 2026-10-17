@@ -16,14 +16,14 @@ import { ThisReceiver } from '@angular/compiler';
   animations:[
     trigger("animateMenu",[
       transition(":enter",[
-        query("*", [
+        query(".brand-link, .menu-ul > li", [
           style({opacity: 0, transform: "translateY(-50%)"}),
           stagger(50,[
             animate(
               "250ms cubic-bezier(0.35, 0, 0.25, 1)",
               style({opacity: 1, transform: "none"}))
           ])
-        ])
+        ], { optional: true })
       ])
     ])
   ]

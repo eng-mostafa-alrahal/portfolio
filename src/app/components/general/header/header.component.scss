@@ -84,11 +84,14 @@
         height: 100vh;
         height: 100dvh;
         z-index: 10;
+        visibility: hidden;
         background: rgba(4, 9, 20, 0);
-        transition: background 0.25s ease;
+        transition: background 0.25s ease, visibility 0s linear 0.28s;
 
         &.menu-open {
+            visibility: visible;
             background: rgba(4, 9, 20, 0.68);
+            transition: background 0.25s ease, visibility 0s linear 0s;
         }
 
         li {

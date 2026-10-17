@@ -15,10 +15,7 @@
                         <div class="more-proyect-box">
                             <div class="w-100">
                                 <div class="card-top-bar">
-                                    <div class="folder-and-badge">
-                                        <img src='assets/images/folder.svg' width="34" alt="Repository">
-                                        <span class="project-badge" *ngIf="project.Badge">{{ project.Badge }}</span>
-                                    </div>
+                                    <img src='assets/images/folder.svg' width="34" height="34" alt="Repository">
                                     <div class="card-links">
                                         <a *ngIf="project['ghLink']" (click)='onLinkClick($event, "click_project_github")' [href]="project['ghLink']" target="_blank" rel="noopener noreferrer" title="View GitHub Repository">
                                             <i id="ghLink" class="fab fa-github"></i>
@@ -28,7 +25,8 @@
                                         </a>
                                     </div>
                                 </div>
-                                <h5 class="other-proyect-title mt-3">{{project.Title}}</h5>
+                                <span class="project-badge" *ngIf="project.Badge">{{ project.Badge }}</span>
+                                <h5 class="other-proyect-title">{{project.Title}}</h5>
                                 <p class="other-proyect-description">
                                     {{project.Description}}
                                 </p>

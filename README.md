@@ -51,7 +51,7 @@ All content and structured data live in `src/assets/i18n/en.json`:
 
 - **Palette:** **Electric AI Blue & Deep Midnight Slate** defined in `src/variables.scss` and `src/styles.scss` (`$Navy: #070d19`, `$LightNavy: #0f172a`, `$AccentBlue: #38bdf8`, `$AccentRoyal: #3b82f6`, `$AccentIndigo: #6366f1`).
 - **Animated AI Graph & Aurora Background (`AppComponent`):** Fixed multi-layer background featuring drifting aurora glows, a radial-masked blueprint grid, and an HTML5 `<canvas>` node-and-edge constellation with traveling pulses. Density scales down on mobile and respects `prefers-reduced-motion`.
-- **Mobile Web Responsiveness:** Optimized across phone (`360px`–`430px`), tablet (`768px`), and desktop viewports with a slide-out mobile drawer, full-width touch-friendly CTA buttons, horizontal scrollable experience tabs, and responsive case-study carousels.
+- **Mobile Web Responsiveness:** Optimized across phone (`360px`–`430px`), tablet (`768px`), and desktop viewports with a slide-out mobile drawer, full-width touch-friendly CTA buttons, a single-row experience tab bar (Maly Tech, Freelance, Education), case-study images that scroll with the page, and project badges that wrap when the label is long.
 - **Favicon:** Browser-tab icon is the `MA` monogram (`src/favicon.ico`, `src/assets/images/favicon.svg`, `src/assets/images/favicon-32.png`, and `src/assets/images/apple-touch-icon.png`).
 
 ## Agent and crawler access

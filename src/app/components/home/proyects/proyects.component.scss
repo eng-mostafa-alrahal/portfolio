@@ -52,15 +52,17 @@
         .img-container {
             width: 100%;
             max-height: 350px;
-            overflow: auto;
+            overflow-x: hidden;
+            overflow-y: auto;
+            overscroll-behavior: contain;
             border-radius: 8px;
             border: 1px solid rgba(56, 189, 248, 0.18);
             background: #050a14;
-            -webkit-overflow-scrolling: touch;
         }
 
         .img-feature-proyect {
             width: 100%;
+            max-width: 100%;
             height: auto;
             display: block;
         }
@@ -76,14 +78,17 @@
             display: inline-block;
             font-size: 11.5px;
             font-weight: 500;
+            line-height: 1.45;
             color: $AccentBlue;
             font-family: $CodeFont;
             background: rgba(56, 189, 248, 0.1);
             border: 1px solid rgba(56, 189, 248, 0.25);
             padding: 4px 11px;
-            border-radius: 999px;
+            border-radius: 8px;
             margin-bottom: 10px;
             max-width: 100%;
+            white-space: normal;
+            overflow-wrap: break-word;
         }
 
         .proyect-name {
@@ -162,6 +167,12 @@
     }
 }
 
+::ng-deep .proyects .owl-carousel,
+::ng-deep .proyects .owl-carousel .owl-stage-outer {
+    max-width: 100%;
+    min-width: 0;
+}
+
 ::ng-deep .owl-theme .owl-dots .owl-dot.active span,
 ::ng-deep .owl-theme .owl-dots .owl-dot:hover span {
     background-color: $AccentBlue !important;
@@ -206,6 +217,27 @@
                 }
             }
         }
+
+        .case-study-media .img-container {
+            height: min(78vw, 420px);
+            max-height: none;
+            overflow: hidden;
+            touch-action: pan-y;
+        }
+
+        .case-study-media .img-feature-proyect {
+            width: 100%;
+            height: 100%;
+            max-height: none;
+            object-fit: cover;
+            object-position: top center;
+        }
+    }
+
+    ::ng-deep .proyects .owl-carousel .owl-stage,
+    ::ng-deep .proyects .owl-carousel .owl-stage-outer,
+    ::ng-deep .proyects .owl-carousel .owl-item {
+        touch-action: pan-y pinch-zoom;
     }
 }
 
@@ -222,7 +254,7 @@
             gap: 18px;
         }
         .case-study-media .img-container {
-            max-height: 250px;
+            height: min(70vw, 320px);
         }
         .case-study-info {
             .proyect-name {
