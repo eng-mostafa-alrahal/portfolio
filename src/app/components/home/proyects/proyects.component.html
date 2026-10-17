@@ -9,7 +9,7 @@
             </div>
 
             <div *ngFor='let project of "FeatureProjects.Projects" | translate; let i = index' class="case-study-card" [class.reverse-layout]='i%2!=0' data-aos="fade-up" data-aos-duration="1000">
-                <div class="case-study-media">
+                <div #caseMedia class="case-study-media">
                     <owl-carousel-o class='owl-carousel-o' [options]="customOptions">
                         <ng-container *ngFor="let img of project.imgs; let imgIndex = index">
                             <ng-template carouselSlide [id]="project.Title + '-' + i + '-' + imgIndex">
