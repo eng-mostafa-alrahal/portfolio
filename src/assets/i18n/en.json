@@ -151,7 +151,7 @@
       "Date": "Graduated 2025 · GPA: 3.78 / 4.0 (WES-Evaluated U.S. Equivalency)",
       "Description": [
         "<span class='underline'>WES-Evaluated U.S. Bachelor’s Degree Equivalency</span> with a 3.78/4.0 GPA, specializing in Artificial Intelligence and Natural Language Processing.",
-        "Led the <span class='underline'>Fruitful Tree Count Management</span> graduation project, developing and evaluating computer-vision and deep-learning algorithms for automated fruit-tree detection from satellite imagery (OpenCV, GeoDjango, and Google Earth Engine), achieving >90% reported detection accuracy and winning <span class='underline'>1st Place</span> in the National Programming Competition."
+        "Contributed to the <span class='underline'>Fruitful Tree Count Management</span> graduation project, developing and evaluating computer-vision and deep-learning algorithms for automated fruit-tree detection from satellite imagery (OpenCV, GeoDjango, and Google Earth Engine), achieving >90% reported detection accuracy and winning <span class='underline'>1st Place</span> in the National Programming Competition."
       ]
     }
   ],
@@ -271,7 +271,7 @@
     {
       "Badge": "Graduation Project · 1st Place National Award · 2024",
       "Title": "Fruitful Tree Count Management",
-      "Description": "Led a satellite-imagery computer vision and geospatial farm management system built with GeoDjango, OpenCV, Google Earth Engine, and PostGIS. Developed and evaluated the computer-vision and deep-learning algorithms for automated fruit-tree detection (>90% reported accuracy; 1st Place in the National Programming Competition).",
+      "Description": "Satellite-imagery computer vision and geospatial farm management system built with GeoDjango, OpenCV, Google Earth Engine, and PostGIS. Developed and evaluated the computer-vision and deep-learning algorithms for automated fruit-tree detection (>90% reported accuracy; 1st Place in the National Programming Competition).",
       "ghLink": "https://github.com/eng-mostafa-alrahal/fruitful-tree-count-management",
       "demoLink": "https://www.linkedin.com/posts/nabil-ghosn_ai-agritech-innovation-activity-7268596532893941760-49ia",
       "Technologies": ["Python", "OpenCV", "GeoDjango", "Google Earth Engine", "PostGIS", "Computer Vision"]

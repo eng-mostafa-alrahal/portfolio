@@ -38,7 +38,7 @@ Applied AI engineer building enterprise retrieval-augmented generation (RAG), mu
 - Damascus University — B.S., Information Technology Engineering (AI & NLP specialization), 2025
 - GPA: 3.78/4.0
 - WES-evaluated U.S. bachelor's degree equivalency
-- Led the Fruitful Tree Count Management graduation project (satellite imagery computer vision; >90% reported accuracy; 1st Place, National Programming Competition)
+- Contributed to the Fruitful Tree Count Management graduation project (satellite imagery computer vision; >90% reported accuracy; 1st Place, National Programming Competition)
 
 ## Selected public projects
 
