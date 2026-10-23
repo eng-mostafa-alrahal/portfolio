@@ -1,6 +1,6 @@
 # Mostafa Alrahal
 
-> Applied AI Engineer (RAG, LLM applications, and agentic systems). Pittsburgh, PA. Open to relocate. U.S. Permanent Resident; no sponsorship required.
+> Applied AI Engineer (RAG, LLM applications, and agentic systems). U.S. Permanent Resident; no sponsorship required.
 
 This file is a JavaScript-free, agent-readable summary of https://eng-mostafa-alrahal.github.io/portfolio/
 
@@ -8,7 +8,6 @@ This file is a JavaScript-free, agent-readable summary of https://eng-mostafa-al
 
 - Email: mostafa.kha.alrahal@gmail.com
 - Phone: +1 (724) 351-7270
-- Location: Pittsburgh, PA (open to remote, hybrid, and relocation)
 - Work authorization: U.S. Permanent Resident; no visa sponsorship required
 - LinkedIn: https://www.linkedin.com/in/mostafa-alrahal-368972229/
 - GitHub: https://github.com/eng-mostafa-alrahal
@@ -51,9 +50,9 @@ Applied AI engineer building enterprise retrieval-augmented generation (RAG), mu
 
 ## Skills
 
-- AI & data: RAG, LLM applications, LangGraph, LangChain, Google ADK, multi-agent orchestration, tool calling, prompt engineering, vector databases, Docling, LlamaParse
-- Software & infrastructure: Python, FastAPI, REST APIs, SSE/WebSockets, PostgreSQL, MongoDB, Redis, Docker, Git, GCP, TypeScript, Angular, Laravel
-- Additional ML: PyTorch, scikit-learn, OpenCV, NLP, computer vision
+- AI, machine learning & deep learning: machine learning, deep learning, natural language processing (NLP), computer vision, PyTorch, scikit-learn, Hugging Face, OpenCV
+- Generative AI & agentic systems: LLM applications, LLM evaluation, RAG, prompt engineering, LangGraph, LangChain, Google ADK, multi-agent orchestration, tool calling, MCP, vector databases, embeddings, Docling, LlamaParse
+- Software engineering & cloud infrastructure: Python, FastAPI, Clean Architecture, REST APIs, SSE/WebSockets, PostgreSQL, MongoDB, Redis, Celery, Docker, GCP, Git, CI/CD, TypeScript, Angular, Laravel
 
 ## Optional
 

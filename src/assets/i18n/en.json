@@ -7,7 +7,6 @@
   "Header.cvBtn": "Resume",
   "Header.cvName": "MOSTAFA_ALRAHAL_RESUME.pdf",
 
-  "Banner.BadgeLocation": "Pittsburgh, PA · Open to Relocate",
   "Banner.BadgeAuth": "U.S. Permanent Resident · No Sponsorship Required",
   "Banner.Pretitle": "APPLIED AI ENGINEER | RAG, LLM APPLICATIONS & AGENTIC SYSTEMS",
   "Banner.Name": "Mostafa Alrahal.",
@@ -18,15 +17,10 @@
 
   "AboutMe.Title": "About & Engineering Approach",
   "AboutMe.Paragraphs": [
-    "I am an <span class='underline'>Applied AI Engineer</span> based in Pittsburgh, PA, specializing in turning LLM capabilities into reliable, maintainable backend systems using <span class='underline'>Python, FastAPI, LangGraph, LangChain, and Google ADK</span>. My work bridges the full lifecycle of AI engineering—from layout-aware document ingestion and vector retrieval pipelines to deterministic multi-agent orchestration and streaming APIs.",
+    "I am an <span class='underline'>Applied AI Engineer</span> specializing in turning LLM capabilities into reliable, maintainable backend systems using <span class='underline'>Python, FastAPI, LangGraph, LangChain, and Google ADK</span>. My work bridges the full lifecycle of AI engineering—from layout-aware document ingestion and vector retrieval pipelines to deterministic multi-agent orchestration and streaming APIs.",
     "At <span class='underline'>Maly Tech Ltd</span>, I contributed to the AI assistant embedded in <span class='underline'>Deloitte Middle East’s ME Tax Pulse</span>, architected the <span class='underline'>AI4ALL</span> multi-tenant agent prototyping platform, and built <span class='underline'>Luna</span>, a RAG-powered financial assistant. Beyond proprietary client systems, I maintain open-source reference architectures that showcase strict port/adapter separation, Human-in-the-Loop (HITL) approval gates, and verifiable quote extraction."
   ],
   "AboutMe.ProfileFacts": [
-    {
-      "Icon": "fas fa-map-marker-alt",
-      "Label": "Location",
-      "Value": "Pittsburgh, PA (Open to Remote, Hybrid & Relocation)"
-    },
     {
       "Icon": "fas fa-id-card",
       "Label": "Work Authorization",
@@ -67,23 +61,38 @@
   "AboutMe.SkillsTitle": "Technical Stack",
   "AboutMe.SkillCategories": [
     {
-      "Category": "AI, LLMs & Data",
+      "Category": "AI, Machine Learning & Deep Learning",
       "Items": [
-        "RAG",
+        "Machine Learning",
+        "Deep Learning",
+        "Natural Language Processing (NLP)",
+        "Computer Vision",
+        "PyTorch",
+        "scikit-learn",
+        "Hugging Face",
+        "OpenCV"
+      ]
+    },
+    {
+      "Category": "Generative AI & Agentic Systems",
+      "Items": [
         "LLM Applications",
+        "LLM Evaluation",
+        "RAG",
+        "Prompt Engineering",
         "LangGraph",
         "LangChain",
         "Google ADK",
         "Multi-Agent Orchestration",
         "Tool Calling & MCP",
-        "Prompt Engineering",
         "Vector Databases",
+        "Embeddings",
         "Docling",
         "LlamaParse"
       ]
     },
     {
-      "Category": "Software & Infrastructure",
+      "Category": "Software Engineering & Cloud Infrastructure",
       "Items": [
         "Python",
         "FastAPI",
@@ -101,23 +110,12 @@
         "Angular",
         "Laravel"
       ]
-    },
-    {
-      "Category": "Additional ML & Computer Vision",
-      "Items": [
-        "PyTorch",
-        "scikit-learn",
-        "OpenCV",
-        "Hugging Face",
-        "Natural Language Processing (NLP)",
-        "Computer Vision"
-      ]
     }
   ],
   "AboutMe.Skills": [
-    "AI & Data: RAG, LLM Applications, LangGraph, LangChain, Google ADK, Tool Calling, Multi-Agent Orchestration, Prompt Engineering, Docling, LlamaParse",
-    "Software & Infrastructure: Python, FastAPI, REST APIs, SSE/WebSockets, PostgreSQL, MongoDB, Redis, Celery, Docker, Git, GCP, TypeScript, Angular, Laravel",
-    "Additional ML: PyTorch, scikit-learn, OpenCV, NLP, Computer Vision"
+    "AI, Machine Learning & Deep Learning: Machine Learning, Deep Learning, Natural Language Processing (NLP), Computer Vision, PyTorch, scikit-learn, Hugging Face, OpenCV",
+    "Generative AI & Agentic Systems: LLM Applications, LLM Evaluation, RAG, Prompt Engineering, LangGraph, LangChain, Google ADK, Multi-Agent Orchestration, Tool Calling & MCP, Vector Databases, Embeddings, Docling, LlamaParse",
+    "Software Engineering & Cloud Infrastructure: Python, FastAPI, Clean Architecture, REST APIs, SSE / WebSockets, PostgreSQL, MongoDB, Redis, Celery, Docker, GCP, Git & CI/CD, TypeScript, Angular, Laravel"
   ],
 
   "Experience.Title": "Experience & Education",
@@ -280,7 +278,7 @@
 
   "Contact.Pretitle": "What’s Next?",
   "Contact.Title": "Let’s Build Production AI Together",
-  "Contact.Content": "I am based in Pittsburgh, PA, open to relocate, and hold U.S. Permanent Residency (no visa sponsorship required). Whether you are hiring for an Applied AI Engineer, LLM / RAG Systems Engineer, or Python AI Backend Engineer role, I would welcome the opportunity to connect.",
+  "Contact.Content": "I hold U.S. Permanent Residency (no visa sponsorship required). Whether you are hiring for an Applied AI Engineer, LLM / RAG Systems Engineer, or Python AI Backend Engineer role, I would welcome the opportunity to connect.",
   "Contact.Btn": "Send an Email",
   "Contact.Email": "mostafa.kha.alrahal@gmail.com",
   "Contact.Phone": "+1 (724) 351-7270",

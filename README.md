@@ -1,6 +1,6 @@
 # Mostafa Alrahal — Applied AI Engineer Portfolio
 
-> **Project Target:** Personal engineering portfolio (`https://eng-mostafa-alrahal.github.io/portfolio/`) positioning **Mostafa Alrahal** as an **Applied AI Engineer (RAG, LLM Applications & Agentic Systems)** based in **Pittsburgh, PA** (U.S. Permanent Resident; no sponsorship required). Beyond listing past roles, the site demonstrates **how production AI systems are architected**—combining enterprise case studies from **Maly Tech Ltd** (including contributions to **Deloitte Middle East’s ME Tax Pulse**), core AI engineering pillars, categorized technical capabilities, and inspectable open-source repositories.
+> **Project Target:** Personal engineering portfolio (`https://eng-mostafa-alrahal.github.io/portfolio/`) positioning **Mostafa Alrahal** as an **Applied AI Engineer (RAG, LLM Applications & Agentic Systems)** (U.S. Permanent Resident; no sponsorship required). Beyond listing past roles, the site demonstrates **how production AI systems are architected**—combining enterprise case studies from **Maly Tech Ltd** (including contributions to **Deloitte Middle East’s ME Tax Pulse**), core AI engineering pillars, categorized technical capabilities, and inspectable open-source repositories.
 
 Live Portfolio: **<https://eng-mostafa-alrahal.github.io/portfolio/>**
 
@@ -11,17 +11,17 @@ Live Portfolio: **<https://eng-mostafa-alrahal.github.io/portfolio/>**
 All content and structured data live in `src/assets/i18n/en.json`:
 
 1. **Hero / Banner (`Banner.*`)**
-   - Location & work-authorization status badges (`Pittsburgh, PA · Open to Relocate` and `U.S. Permanent Resident · No Sponsorship Required`)
+   - Work-authorization status badge (`U.S. Permanent Resident · No Sponsorship Required`)
    - Role positioning (`APPLIED AI ENGINEER | RAG, LLM APPLICATIONS & AGENTIC SYSTEMS`)
    - Direct actions (`Get in Touch`, `View Open-Source Code`, `LinkedIn`)
 
 2. **`01. About & Engineering Approach` (`AboutMe.*`)**
-   - **Narrative & Profile Facts**: Background, Pittsburgh location, U.S. Permanent Residency, and **Damascus University B.S. in IT Engineering (AI & NLP Specialization, 3.78/4.0 GPA, WES-Evaluated U.S. Bachelor’s Equivalency)**.
+   - **Narrative & Profile Facts**: Background, U.S. Permanent Residency, and **Damascus University B.S. in IT Engineering (AI & NLP Specialization, 3.78/4.0 GPA, WES-Evaluated U.S. Bachelor’s Equivalency)**.
    - **How I Engineer Production AI Systems (`AboutMe.Pillars`)**:
      - *Document Intelligence & High-Precision RAG* (`Docling`, `LlamaParse`, context-preserving chunking, vector databases, verbatim quote verification)
      - *Stateful Multi-Agent Orchestration* (`LangGraph`, `Google ADK`, parallel `Send` execution, Human-in-the-Loop approval gates, `MCP` tool sandboxing)
      - *Clean Architecture AI Backends* (`Python`, `FastAPI`, async `SQLAlchemy 2.0`/`PostgreSQL`, `Redis`/`Celery`, JWT auth, `pytest` suites)
-   - **Categorized Technical Stack (`AboutMe.SkillCategories`)**: Grouped into *AI, LLMs & Data*, *Software & Infrastructure*, and *Additional ML & Computer Vision*.
+   - **Categorized Technical Stack (`AboutMe.SkillCategories`)**: Grouped into *AI, Machine Learning & Deep Learning*, *Generative AI & Agentic Systems*, and *Software Engineering & Cloud Infrastructure*.
 
 3. **`02. Experience & Education` (`Experience.Jobs`)**
    - **Maly Tech Ltd** — *Generative AI Engineer* (Dubai, UAE | Aug 2024 – May 2026)

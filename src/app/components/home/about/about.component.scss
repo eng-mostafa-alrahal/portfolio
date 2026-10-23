@@ -187,6 +187,9 @@
             font-family: $CodeFont;
             font-size: 14px;
             font-weight: 600;
+            line-height: 1.45;
+            min-height: calc(2.9em + 10px);
+            text-wrap: balance;
             color: $AccentBlue;
             margin-bottom: 14px;
             padding-bottom: 10px;

@@ -1,7 +1,6 @@
 {
   "name": "Mostafa Alrahal",
   "headline": "Applied AI Engineer | RAG, LLM Applications & Agentic Systems",
-  "location": "Pittsburgh, PA (open to relocate)",
   "workAuthorization": "U.S. Permanent Resident; no sponsorship required",
   "email": "mostafa.kha.alrahal@gmail.com",
   "phone": "+1 (724) 351-7270",
@@ -69,8 +68,8 @@
     }
   ],
   "skills": {
-    "aiAndData": ["RAG", "LLM applications", "LangGraph", "LangChain", "Google ADK", "multi-agent orchestration", "tool calling", "prompt engineering", "vector databases", "Docling", "LlamaParse"],
-    "softwareAndInfrastructure": ["Python", "FastAPI", "REST APIs", "SSE/WebSockets", "PostgreSQL", "MongoDB", "Redis", "Docker", "Git", "GCP", "TypeScript", "Angular", "Laravel"],
-    "additionalMl": ["PyTorch", "scikit-learn", "OpenCV", "NLP", "computer vision"]
+    "aiMachineLearningAndDeepLearning": ["machine learning", "deep learning", "natural language processing (NLP)", "computer vision", "PyTorch", "scikit-learn", "Hugging Face", "OpenCV"],
+    "generativeAiAndAgenticSystems": ["LLM applications", "LLM evaluation", "RAG", "prompt engineering", "LangGraph", "LangChain", "Google ADK", "multi-agent orchestration", "tool calling", "MCP", "vector databases", "embeddings", "Docling", "LlamaParse"],
+    "softwareEngineeringAndCloudInfrastructure": ["Python", "FastAPI", "Clean Architecture", "REST APIs", "SSE/WebSockets", "PostgreSQL", "MongoDB", "Redis", "Celery", "Docker", "GCP", "Git", "CI/CD", "TypeScript", "Angular", "Laravel"]
   }
 }

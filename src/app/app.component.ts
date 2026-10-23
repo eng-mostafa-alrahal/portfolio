@@ -50,8 +50,8 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
 
     this.titleService.setTitle("Mostafa Alrahal | Applied AI Engineer — RAG, LLM Applications & Agentic Systems");
     this.metaService.addTags([
-      { name: 'keywords', content: 'Mostafa Alrahal, Applied AI Engineer, Generative AI Engineer, RAG, LangGraph, LangChain, Google ADK, FastAPI, Python, Multi-Agent Systems, LLM Backend Engineer, Pittsburgh' },
-      { name: 'description', content: 'Applied AI Engineer based in Pittsburgh, PA (U.S. Permanent Resident; no sponsorship required) building enterprise RAG pipelines, multi-agent LangGraph workflows, and Clean Architecture FastAPI backends in Python.' },
+      { name: 'keywords', content: 'Mostafa Alrahal, Applied AI Engineer, Generative AI Engineer, RAG, LangGraph, LangChain, Google ADK, FastAPI, Python, Multi-Agent Systems, LLM Backend Engineer' },
+      { name: 'description', content: 'Applied AI Engineer (U.S. Permanent Resident; no sponsorship required) building enterprise RAG pipelines, multi-agent LangGraph workflows, and Clean Architecture FastAPI backends in Python.' },
     ]);
 
     AOS.init({
